@@ -1,5 +1,5 @@
 # ⚽ Family Football
-skyx platform cryptocurrency website. This program (Front End) was created using **HTML (Hypertext Markup Language)**, **CSS (Cascading Style Sheet)**, **JavaScript**, **Bootstrap v.5**, **FontAwesome**, etc.
+Family Football streaming platform. This program (Front End) was created using **HTML (Hypertext Markup Language)**, **CSS (Cascading Style Sheet)**, **JavaScript**, **Bootstrap v.5**, **FontAwesome**, etc.
 
 ## 📛 Badges
 
