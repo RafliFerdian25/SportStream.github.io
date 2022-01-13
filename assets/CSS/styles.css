@@ -138,7 +138,7 @@ h6 {
   width: 100%; /* Full width */
   transition: top 0.3s;
   background-color: white;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2)
+  box-shadow: 0px 2px 9px -1px rgba(0, 0, 0, 0.75);
 }
 .nav-item .nav-link{
   font-weight: 600;
@@ -244,7 +244,18 @@ footer a{
   color: white;
 }
 .tonton__section{
-  padding: 92px 0;
+  padding: 76px 0;
+}
+.tonton__content{
+    padding: 16px 0;
+    transition: background-color .5s,
+      border-radius .5s;
+
+}
+.tonton__content:hover {
+  background-color: #000000 !important;
+  border-radius: 15px;
+  color: white !important;
 }
 .tonton__btn{
   font-size: 72px;
@@ -287,27 +298,29 @@ footer a{
 .list__title{
   padding-top: 154px;
 }
-.list__epl__image{
+.list__liga__image{
   padding: 36px;
   padding-bottom: 28px;
 }
-.list__epl{
+.list__liga{
   margin: 56px 0;
 }
 .match{
-  margin-bottom: 36px;
-}
-.match__table{
-  display: table;
-  width: 100%;
-  table-layout: fixed;
-}
-.match__table__cell{
-  display: table-cell;
-    table-layout: fixed;
+  padding: 18px 0;
 }
 .stream__match__score{
-  width: 144px;
+  margin: 0 48px;
+  padding: 0;
+}
+.list__liga__content li{
+  transition: background-color .5s, border-radius .5s;
+}
+.list__liga__content li:hover {
+  background-color: rgba(0, 0, 0, 0.09) !important;
+  border-radius: 15px;
+}
+.list__content .card{
+  position: static;
 }
 /*******************************************/
 /*               RESPONSIVES               */
@@ -396,6 +409,19 @@ footer a{
   .apaitu__content{
     width: 100%;
     margin: 0 auto;
+  }
+
+  /* ********   LIST STREAM   ********* */
+  .stream__match__score {
+    margin: 0 4px;
+    padding: 0;
+  }
+  .match__kiri,
+  .match__kanan, .match__nama__club {
+    padding: 4px !important;
+  }
+  .list__liga__image {
+    align-self: center;
   }
 }
 

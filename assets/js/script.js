@@ -26,8 +26,17 @@ window.onscroll = function () {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-70px";
+    document.getElementById("navbar").style.top = "-74px";
   }
   prevScrollpos = currentScrollPos;
 };
-/******************      ******************/
+
+/******************   About   ******************/
+$(".tonton__content").hover(
+  function () {
+    $(".tonton__hover").css({ color: "white", transition: "color .5s" });
+  },
+  function () {
+    $(".tonton__hover").css({ color: "black" });
+  }
+);
