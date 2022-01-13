@@ -280,8 +280,37 @@ footer a{
   margin: 0;
   font-weight: 700;
 }
+
+/*********************************************/
+/*               LIST STREAM                 */
+/*********************************************/
+.list__title{
+  padding-top: 154px;
+}
+.list__epl__image{
+  padding: 36px;
+  padding-bottom: 28px;
+}
+.list__epl{
+  margin: 56px 0;
+}
+.match{
+  margin-bottom: 36px;
+}
+.match__table{
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.match__table__cell{
+  display: table-cell;
+    table-layout: fixed;
+}
+.stream__match__score{
+  width: 144px;
+}
 /*******************************************/
-/*               RESPONEIVES               */
+/*               RESPONSIVES               */
 /*******************************************/
 
 /*=============== tablet view ===============*/

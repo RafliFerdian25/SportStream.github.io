@@ -18,7 +18,7 @@
     font-style: normal;
 }
 
-/* regular - 500 - normal */
+/* medium - 500 - normal */
 @font-face {
     font-family: 'Plus Jakarta Sans';
     src: url('PlusJakartaSans-Medium.woff2') format('woff2'),
