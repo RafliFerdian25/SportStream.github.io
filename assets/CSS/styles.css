@@ -1,0 +1,372 @@
+/************************************************/
+/*               TABLE OF CONTENT               */
+/************************************************/
+/*
+    1.
+    2.
+*/
+
+/*******************************************/
+/*               GOOGLE FONT               */
+/*******************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Spline+Sans:wght@400;600;700&display=swap');
+@import url(../vendor/fonts/fonts.css);
+/****************************************/
+/*               VARIABLE               */
+/****************************************/
+:root {
+  /*height and width*/
+
+  /*color*/
+  --white: rgba(255, 255, 255, 1);
+  --black: rgba(0, 0, 0, 1);
+  --light: rgba(247, 247, 247, 1);
+  --blight: rgb(227, 238, 237);
+  --orange: rgba(239, 132, 81, 1);
+  --green1: rgba(61, 165, 99, 1);
+  --green2: rgba(137, 176, 146, 1);
+  --dark: rgba(16, 44, 47, 1);
+  --dark2: rgba(1, 37, 36, 1);
+
+  /*font and typography*/
+  --reg-size: 16px;
+  --medium-size: 18px;
+  --big-size: 24px;
+  /*--body-font: 'Maven Pro', sans-serif;*/
+  --body-font: 'Plus Jakarta Sans', sans-serif;
+  --head-font: ;
+
+  /*padding and margin*/
+  --m-lg: 112px 0;
+  --mb-lg: 112px;
+
+  /*utility-radius*/
+  --sm-rad: 3px;
+  --md-rad: 6px;
+  --lg-rad: 12px;
+}
+
+/*********************************************/
+/*               GENERAL STYLE               */
+/*********************************************/
+* {
+  font-family: var(--body-font);
+  font-weight: 400;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: var(--head-font);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: var(--head-font);
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 700;
+
+  margin-bottom: 18px !important;
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 18px;
+}
+.white{
+  color: white!important;
+}
+.black{
+  color: black!important;
+}
+/*****************/
+/*    Navbar     */
+/*****************/
+.vl {
+  border-left: 2px solid rgba(0, 0, 0, 0.309);
+  height: 30px;
+  margin: 0px 48px;
+}
+.nav__margin{
+  margin: 0px 8px !important;
+}
+.navbar{
+  font-size: 14px !important;
+}
+.nav-link{
+  color: black !important;
+}
+.nav-link.active{
+  color: white !important;
+  background-color: black !important;
+}
+.navbar .btn-outline-success{
+  color: white !important;
+  background-color: black !important;
+  border-color: black !important;
+}
+#navbar{
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s;
+  background-color: white;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2)
+}
+.nav-item .nav-link{
+  font-weight: 600;
+}
+/*****************/
+/*    Footer     */
+/*****************/
+footer {
+  color: white!important;
+  background-color: var(--black);
+}
+.footer__content{
+  padding-top: 64px;
+  margin-bottom: 64px;
+}
+footer a{
+  color: white!important;
+}
+.footer__title__logo{
+  margin-bottom: 36px;
+}
+.footer__sosmed li{
+  font-size: 24px;
+  margin-right: 16px;
+}
+.quick__links li, .nama__liga1 li, .nama__liga2 li{
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+.right__footer ul{
+  padding-left: 1rem !important;
+}
+.dropdown:hover .dropdown-menu {display: block;}
+.footer__title{
+  display: none;
+}
+.left__footer h4, .left__footer p, .left__footer i, .right__footer i, .bottom__footer p{
+  color: white !important;
+}
+/*********************************************/
+/*               ABOUT                       */
+/*********************************************/
+.aboutus__container{
+  padding-left: 100px;
+  max-width: 480px;
+  margin-right: 100px;
+}
+.aboutus__content .aboutus__desc{
+  height: 705px;
+}
+.aboutus__desc{
+  height: 100%;
+}
+.aboutus__desc__content p{
+  font-size: 18px;
+  font-weight: 500;
+}
+.aboutus__desc__content h1{
+  margin-bottom: 36px;
+}
+.aboutus__desc__content .material-icons{
+  color: white;
+}
+.aboutus__image__content{
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn__about__stream{
+  background-color: black;
+  border-color: black;
+  font-size: 18px;
+  padding: 18px 36px;
+}
+.block__section{
+  background-color: black;
+  height: 160px;
+}
+.apaitu__section{
+  height: 705px;
+}
+.apaitu__body{
+  padding: 72px 0px;
+}
+.apaitu__content{
+  height: 100%;
+}
+.apaitu__image__content{
+  height: 560px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.apaitu__desc{
+  padding: 78px 0px;
+}
+.apaitu__desc__content{
+  padding: 86px 64px;
+  background-color: black;
+}
+.apaitu__desc__content h2, .apaitu__desc__content p{
+  color: white;
+}
+.tonton__section{
+  padding: 92px 0;
+}
+.tonton__btn{
+  font-size: 72px;
+}
+.tonton__desc h4{
+  font-weight: 800;
+}
+.gabung__section{
+  padding: 72px 0;
+}
+.gabung__body{
+  padding: 64px;
+}
+.gabung__content h2{
+  font-weight: 700;
+  color: white;
+}
+.gabung__content__title{
+  max-width: 590px;
+}
+.gabung__body{
+  background-color: black;
+}
+.gabung__content__tele{
+  padding: 12px 24px;
+  border: 1px solid white;
+}
+.gabung__content__tele i{
+  margin-right: 6px !important;
+}
+.gabung__content__tele p, .gabung__content__tele i{
+  color: white;
+  margin: 0;
+  font-weight: 700;
+}
+/*******************************************/
+/*               RESPONEIVES               */
+/*******************************************/
+
+/*=============== tablet view ===============*/
+
+@media (max-width: 991px){
+  /* Navbar */
+  .vl{
+    display: none;
+  }
+  .form__search{
+    display: none !important;
+  }
+  .apaitu__desc{
+    padding: 0;
+  }
+  .apaitu__desc__content{
+    padding: 72px 64px;
+  }
+}
+@media (max-width: 767px){
+  
+  /* Footer */
+  .left__footer{
+    margin-bottom: 36px;
+  }
+  .right__footer{
+    justify-content: end;
+  }
+  .right__footer ul{
+    padding: 0!important;
+  }
+  .footer__title{
+    display: block;
+    color: white;
+  }
+  .footer__sosmed{
+    justify-content: center !important;
+  }
+  .footer__deskripsi, .footer__title__logo{
+    text-align: center;
+  }
+  .footer__sosmed__list{
+    justify-content: center;
+  }
+
+  /* about */
+  .apaitu__desc__content{
+    padding: 36px 40px;
+  }
+  .apaitu__image__content{
+    height: 240px;
+  }
+}
+/*=============== phone view ===============*/
+@media (max-width: 576px){
+  .footer__nama__liga{
+    justify-content: center;
+  }
+
+  /* about */
+  .aboutus__section{
+    margin-bottom: 72px;
+  }
+  .aboutus__image__content{
+    height: 480px;
+  }
+  .aboutus__content .aboutus__desc{
+    min-height: 600px;
+    height: auto;
+  }
+  .aboutus__container{
+    padding: 0px 12px;
+    margin: 0;
+  }
+  .apaitu__section{
+    min-height: 600px;
+    height: auto;
+    text-align: --web;
+  }
+  .apaitu__desc__content{
+    padding: 16px 24px;
+  }
+  .apaitu__content{
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
