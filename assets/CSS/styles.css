@@ -753,7 +753,7 @@ footer p {
 }
 .list__liga__content li:hover {
   background-color: rgba(0, 0, 0, 0.09) !important;
-  border-radius: 15px;
+  border-radius: 9px;
 }
 .list__content .card{
   position: static;
