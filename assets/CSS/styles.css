@@ -182,7 +182,7 @@ h6 {
     transition: top .3s;
 
     border-bottom: 1px solid rgba(0, 0, 0, .2);
-    ;
+    
     background-color: white;
 }
 
@@ -728,8 +728,38 @@ footer p {
     font-weight: 800;
 }
 
+/*********************************************/
+/*               LIST STREAM                 */
+/*********************************************/
+.list__title{
+  padding-top: 154px;
+}
+.list__liga__image{
+  padding: 36px;
+  padding-bottom: 28px;
+}
+.list__liga{
+  margin: 56px 0;
+}
+.match{
+  padding: 18px 0;
+}
+.stream__match__score{
+  margin: 0 48px;
+  padding: 0;
+}
+.list__liga__content li{
+  transition: background-color .5s, border-radius .5s;
+}
+.list__liga__content li:hover {
+  background-color: rgba(0, 0, 0, 0.09) !important;
+  border-radius: 15px;
+}
+.list__content .card{
+  position: static;
+}
 /*******************************************/
-/*               RESPONEIVES               */
+/*               RESPONSIVES               */
 /*******************************************/
 
 /*=============== tablet view ===============*/
@@ -1070,6 +1100,19 @@ footer p {
   /* tonton section */
   .tonton__btn {
       font-size: 3.75rem;
+  }
+
+  /* ********   LIST STREAM   ********* */
+  .stream__match__score {
+    margin: 0 4px;
+    padding: 0;
+  }
+  .match__kiri,
+  .match__kanan, .match__nama__club {
+    padding: 4px !important;
+  }
+  .list__liga__image {
+    align-self: center;
   }
 }
 
