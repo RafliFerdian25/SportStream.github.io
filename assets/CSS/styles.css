@@ -1,10 +1,10 @@
-/************************************************/
-/*               TABLE OF CONTENT               */
-/************************************************/
-/*
-    1.
-    2.
-*/
+/***************************************************/
+/*               !!Dokumentasi CSS!!               */
+/***************************************************/
+/* 1. Lihat variabel yang sudah dibuat, dapat digunakan kembali */
+/* 2. Saat membuat section gunakan class blok-full atau blok-x untuk membuat
+jarak atas dan bawah (padding) */
+/* 3. lihat juga class-class yang dapat digunakan kembali agar tidak terjadi penumpukkan style */
 
 /*******************************************/
 /*               GOOGLE FONT               */
@@ -21,352 +21,1055 @@
   /*color*/
   --white: rgba(255, 255, 255, 1);
   --black: rgba(0, 0, 0, 1);
-  --light: rgba(247, 247, 247, 1);
-  --blight: rgb(227, 238, 237);
-  --orange: rgba(239, 132, 81, 1);
-  --green1: rgba(61, 165, 99, 1);
-  --green2: rgba(137, 176, 146, 1);
-  --dark: rgba(16, 44, 47, 1);
-  --dark2: rgba(1, 37, 36, 1);
+  --scnd-light: rgba(240,240,240);
 
   /*font and typography*/
   --reg-size: 16px;
   --medium-size: 18px;
   --big-size: 24px;
-  /*--body-font: 'Maven Pro', sans-serif;*/
+  
+  --head-font: 'Plus Jakarta Sans', sans-serif;
   --body-font: 'Plus Jakarta Sans', sans-serif;
-  --head-font: ;
 
   /*padding and margin*/
-  --m-lg: 112px 0;
-  --mb-lg: 112px;
+  --m-min: 4.5rem;
+  --m-max: 6.25rem;
+  --mx-min: 0 4.5rem;
+  --mx-max: 0 6.25rem;
 
   /*utility-radius*/
-  --sm-rad: 3px;
-  --md-rad: 6px;
-  --lg-rad: 12px;
+  --sm-rad: 0;
+  
+  --global-trans: all .3s ease-in-out;
 }
 
 /*********************************************/
 /*               GENERAL STYLE               */
 /*********************************************/
 * {
-  font-family: var(--body-font);
-  font-weight: 400;
+    font-family: var(--body-font);
+    font-weight: 400;
 
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  color: black;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    color: black;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 h1 {
-  font-family: var(--head-font);
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 1.5;
+    font-family: var(--head-font);
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 h2 {
-  font-family: var(--head-font);
-  font-size: 48px;
+    font-family: var(--head-font);
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 h3 {
-  font-size: 36px;
-  font-weight: 700;
+    font-size: 2.25rem;
+    font-weight: 700;
 
-  margin-bottom: 18px !important;
+    margin-bottom: 18px !important;
 }
 
 h4 {
-  font-size: 30px;
-  font-weight: 700;
+    font-size: 1.875rem;
+    font-weight: 700;
 }
 
 h5 {
-  font-size: 18px;
-  font-weight: 700;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 h6 {
-  font-size: 18px;
+    font-size: 18px;
 }
-.white{
-  color: white!important;
+
+.blok-full {
+    padding: var(--m-min) var(--m-max);
 }
-.black{
-  color: black!important;
+
+.blok-x {
+    padding: var(--mx-max);
 }
+
+.bg__img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg__dark {
+    background-color: var(--black);
+}
+
+.bg__sl {
+    background-color: var(--scnd-light);
+}
+
 /*****************/
 /*    Navbar     */
 /*****************/
+.nav__logo {
+    display: flex;
+
+    align-items: center;
+}
+
+.nav__logo span {
+    font-weight: 800;
+}
+
+.navbar-brand i {
+    font-size: 1.875rem;
+}
+
 .vl {
-  border-left: 2px solid rgba(0, 0, 0, 0.309);
-  height: 30px;
-  margin: 0px 48px;
+    height: 1.875rem;
+    margin: 0 2rem 0 3rem;
+
+    border-left: 1.5px solid rgba(0, 0, 0, .3);
 }
-.nav__margin{
-  margin: 0px 8px !important;
+
+.nav__margin {
+    margin: 0 8px !important;
 }
-.navbar{
-  font-size: 14px !important;
+
+.navbar {
+    font-size: 14px !important;
 }
-.nav-link{
-  color: black !important;
+
+.nav-link {
+    color: black !important;
 }
-.nav-link.active{
-  color: white !important;
-  background-color: black !important;
+
+.nav-link.active {
+    color: white !important;
+    border-radius: var(--sm-rad);
+    background-color: black !important;
 }
-.navbar .btn-outline-success{
-  color: white !important;
-  background-color: black !important;
-  border-color: black !important;
+
+.form__search .form-control {
+    border-radius: var(--sm-rad);
 }
-#navbar{
-  position: fixed; /* Make it stick/fixed */
-  top: 0; /* Stay on top */
-  width: 100%; /* Full width */
-  transition: top 0.3s;
-  background-color: white;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2)
+
+.navbar .btn-outline-success {
+    color: white !important;
+    border-color: black !important;
+    border-radius: var(--sm-rad);
+    background-color: black !important;
 }
-.nav-item .nav-link{
-  font-weight: 600;
+
+#navbar {
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+
+    transition: top .3s;
+
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    ;
+    background-color: white;
 }
+
+.nav-item .nav-link,
+.nav-item .nav-link span {
+    font-weight: 600;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.footer__title {
+    display: none;
+}
+
+.navbar__toggler {
+    border: none;
+}
+
+.navbar__toggler .navbar-toggler-icon {
+    display: flex;
+
+    background: none;
+
+    align-items: center;
+    justify-content: center;
+}
+
 /*****************/
 /*    Footer     */
 /*****************/
 footer {
-  color: white!important;
-  background-color: var(--black);
+    background-color: var(--black);
 }
-.footer__content{
-  padding-top: 64px;
-  margin-bottom: 64px;
+
+footer p {
+    color: var(--white);
 }
-footer a{
-  color: white!important;
+
+.footer__content {
+    padding: 6.25rem 0;
 }
-.footer__title__logo{
-  margin-bottom: 36px;
+
+.footer__title__logo {
+    margin-bottom: 1.875rem;
 }
-.footer__sosmed li{
-  font-size: 24px;
-  margin-right: 16px;
+
+.footer__title__logo h4,
+.footer__title__logo i {
+    color: var(--white);
 }
-.quick__links li, .nama__liga1 li, .nama__liga2 li{
-  margin-bottom: 16px;
-  font-size: 16px;
+
+.footer__deskripsi {
+    line-height: 2;
+
+    max-width: 24rem;
 }
-.right__footer ul{
-  padding-left: 1rem !important;
+
+.right__footer {
+    justify-content: end;
 }
-.dropdown:hover .dropdown-menu {display: block;}
-.footer__title{
-  display: none;
+
+.footer__sosmed {
+    margin-bottom: 2.25rem;
 }
-.left__footer h4, .left__footer p, .left__footer i, .right__footer i, .bottom__footer p{
-  color: white !important;
+
+.footer__sosmed li {
+    font-size: 1.5rem;
+
+    margin-right: 1.875rem;
 }
-/*********************************************/
-/*               ABOUT                       */
-/*********************************************/
-.aboutus__container{
-  padding-left: 100px;
-  max-width: 480px;
-  margin-right: 100px;
+
+.footer__sosmed li:last-child {
+    margin-right: 0;
 }
-.aboutus__content .aboutus__desc{
-  height: 705px;
+
+.footer__sosmed li a i {
+    transition: var(--global-trans);
+
+    color: var(--white);
 }
-.aboutus__desc{
-  height: 100%;
+
+.footer__sosmed li a:hover i {
+    color: rgba(255, 255, 255, .6);
 }
-.aboutus__desc__content p{
-  font-size: 18px;
-  font-weight: 500;
+
+.quick__links ul li,
+.nama__liga1 ul li,
+.nama__liga2 ul li {
+    margin-bottom: 1rem;
 }
-.aboutus__desc__content h1{
-  margin-bottom: 36px;
+
+.quick__links ul li a i,
+.quick__links ul li a span,
+.nama__liga1 ul li a span,
+.nama__liga1 ul li a i,
+.nama__liga2 ul li a span,
+.nama__liga2 ul li a i {
+    font-weight: 500;
+
+    transition: var(--global-trans);
+
+    color: rgba(255, 255, 255, .7);
 }
-.aboutus__desc__content .material-icons{
-  color: white;
+
+.quick__links ul li a:hover span,
+.nama__liga1 ul li a:hover span,
+.nama__liga2 ul li a:hover span {
+    color: var(--white);
 }
-.aboutus__image__content{
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+.quick__links ul li a:hover i,
+.nama__liga1 ul li a:hover i,
+.nama__liga2 ul li a:hover i {
+    transform: translate(3px, -3px);
+
+    color: var(--white);
 }
-.btn__about__stream{
-  background-color: black;
-  border-color: black;
-  font-size: 18px;
-  padding: 18px 36px;
+
+.fl__head {
+    font-weight: 700;
+
+    display: none;
+
+    color: var(--white);
 }
-.block__section{
-  background-color: black;
-  height: 160px;
+
+/*************************/
+/*    Gabung Section     */
+/*************************/
+.gabung__content,
+.gabung__content2 {
+    margin: 0 .75rem;
+    padding: 4rem;
+
+    background-color: var(--black);
 }
-.apaitu__section{
-  height: 705px;
+
+.gabung__content h2 {
+    max-width: 37.5rem;
+    margin-bottom: 2.25rem;
+
+    -webkit-hyphens: auto;
+    hyphens: auto;
+
+    color: white;
+
+    -ms-hyphens: auto;
 }
-.apaitu__body{
-  padding: 72px 0px;
+
+.join__tele {
+    display: flex;
 }
-.apaitu__content{
-  height: 100%;
+
+.btn__tele {
+    display: flex;
+
+    padding: .75rem 1.5rem;
+
+    transition: var(--global-trans);
+
+    border: 1.5px solid var(--white);
+    background-color: var(--black);
+
+    align-items: center;
 }
-.apaitu__image__content{
-  height: 560px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+.btn__tele i {
+    font-size: 1.25rem;
+
+    color: var(--white);
 }
-.apaitu__desc{
-  padding: 78px 0px;
+
+.btn__tele span {
+    font-weight: 600;
+
+    transition: var(--global-trans);
+    -webkit-hyphens: auto;
+    hyphens: auto;
+
+    color: var(--white);
+
+    -ms-hyphens: auto;
 }
-.apaitu__desc__content{
-  padding: 86px 64px 116px;
-  background-color: black;
+
+.btn__tele:hover {
+    background-color: rgba(255, 255, 255, .1);
 }
-.apaitu__desc__content h2, .apaitu__desc__content p{
-  color: white;
+
+/* gabung content 2 */
+.gabung__content2 {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
 }
-.tonton__section{
-  padding: 92px 0;
+
+.gabung__content2 h2 {
+    margin-bottom: 2.25rem;
+
+    text-align: center;
+
+    color: white;
 }
-.tonton__btn{
-  font-size: 72px;
+
+/*******************/
+/*    drop ads     */
+/*******************/
+.drop__ads {
+    width: 100%;
+    height: 22.5rem;
 }
-.tonton__desc h4{
-  font-weight: 800;
+
+.dummy__content {
+    width: 100%;
+    height: 100%;
 }
-.gabung__section{
-  padding: 72px 0;
+
+.dummy__content p {
+    font-size: 1.5rem;
+    font-weight: 700;
 }
-.gabung__body{
-  padding: 64px;
+
+/**************************************/
+/*               INDEX                */
+/**************************************/
+/* jumbotron */
+.jumbotron__section {
+    max-width: 92rem;
+    margin: auto;
 }
-.gabung__content h2{
-  font-weight: 700;
-  color: white;
+
+.left__jumbotron {
+    min-height: 48.75rem;
+    padding-top: 14.75rem;
 }
-.gabung__content__title{
-  max-width: 590px;
+
+.left__jumbotron h1 {
+    margin-bottom: 2.25rem;
 }
-.gabung__body{
-  background-color: black;
+
+.left__jumbotron h6 {
+    line-height: 1.7;
+
+    max-width: 29.75rem;
+    margin-bottom: 1.875rem;
 }
-.gabung__content__tele{
-  padding: 12px 24px;
-  border: 1px solid white;
+
+.right__jumbotron,
+.right__jumbotron .bg__img {
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--black);
 }
-.gabung__content__tele i{
-  margin-right: 6px !important;
+
+.stream__now {
+    display: flex;
+
+    margin-bottom: 5.375rem;
 }
-.gabung__content__tele p, .gabung__content__tele i{
-  color: white;
-  margin: 0;
-  font-weight: 700;
+
+.btn__stream {
+    display: flex;
+
+    padding: 1.125rem 2.25rem;
+
+    transition: var(--global-trans);
+
+    background-color: var(--black);
+
+    align-items: center;
 }
+
+.btn__stream i {
+    font-size: 1.25rem;
+
+    margin-right: .625rem;
+
+    transition: var(--global-trans);
+
+    color: var(--white);
+}
+
+.btn__stream span {
+    font-size: 1.125rem;
+    font-weight: 500;
+
+    transition: var(--global-trans);
+
+    color: var(--white);
+}
+
+.btn__stream:hover {
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.liga__list {
+    display: flex;
+
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.link__logo {
+    display: block;
+
+    margin-right: 2.25rem;
+    margin-bottom: 2.25rem;
+}
+
+.link__logo:last-child {
+    margin-right: 0;
+}
+
+.ll__tt {
+    height: 1.875rem;
+}
+
+/* stream choose */
+.blok-full.stream__choose {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.stream__choose .row h2 {
+    margin-bottom: 2.25rem;
+}
+
+.stream__choose .row p {
+    max-width: 20rem;
+}
+
+#list__video {
+    padding-left: 6rem;
+}
+
+.item__vid {
+    /* padding: 4.5rem 6.125rem 0 6.125rem; */
+    padding: 4.5rem 5vw 0 4.5vw;
+}
+
+.video__play .bg__img {
+    position: relative;
+
+    width: 43vw;
+    /* width: 38.75rem; */
+    max-width: 38.75rem;
+    height: 15.75rem;
+}
+
+.box__video {
+    display: flex;
+
+    width: 43vw;
+    /* width: 38.75rem; */
+    max-width: 38.75rem;
+    height: 15.75rem;
+
+    background-color: rgba(255, 255, 255, .18);
+
+    backdrop-filter: blur(1rem);
+    align-items: center;
+    justify-content: center;
+}
+
+.box__video i {
+    font-size: 3.375rem;
+
+    transition: var(--global-trans);
+}
+
+.box__video:hover i {
+    transform: scale(1.3);
+}
+
+.ll__video {
+    position: absolute;
+    z-index: 100;
+    top: 1.5rem;
+    right: 1.75rem;
+
+    width: auto !important;
+    height: 3.75rem;
+}
+
+.player__tumbnail {
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+
+    width: auto !important;
+}
+
+.left__sc {
+    display: flex;
+
+    height: 100%;
+
+    align-items: center;
+}
+
+.stream__choose .owl-nav {
+    display: flex;
+
+    align-items: center;
+    justify-content: end;
+}
+
+.stream__choose .owl-nav button {
+    margin-top: .5rem !important;
+}
+
+.stream__choose .owl-nav button:hover {
+    background-color: transparent !important;
+}
+
+.stream__choose .owl-nav .owl-prev {
+    margin-right: 1.125rem;
+}
+
+.stream__choose .owl-nav .owl-prev i,
+.stream__choose .owl-nav .owl-next i {
+    font-size: 2.5rem;
+
+    transition: var(--global-trans);
+
+    color: rgba(255, 255, 255, .7);
+}
+
+.stream__choose .owl-nav .owl-prev i:hover,
+.stream__choose .owl-nav .owl-next i:hover {
+    color: var(--white);
+}
+
+/* testi */
+.right__testi h2 {
+    margin-bottom: 3rem;
+}
+
+.testi__point {
+    padding-left: 0;
+}
+
+.testi__point li {
+    display: flex;
+
+    margin-bottom: 2.25rem;
+
+    align-items: center;
+}
+
+.testi__point li:last-child {
+    margin-bottom: 0;
+}
+
+.testi__point li img {
+    height: 2.125rem;
+    margin-right: 1.125rem;
+}
+
+.left__testi {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+}
+
+.left__testi .bg__img {
+    width: 31rem;
+    height: 86%;
+}
+
+/**************************************/
+/*               ABOUT                */
+/**************************************/
+.apaitu__image__content {
+    height: 35rem;
+}
+
+.apaitu__desc {
+    display: flex;
+
+    height: 35rem;
+    padding: 0;
+
+    align-items: center;
+}
+
+.apaitu__desc__content {
+    padding: 5.375rem 4rem;
+
+    background-color: black;
+}
+
+.apaitu__desc__content h2,
+.apaitu__desc__content p {
+    color: white;
+}
+
+.apaitu__desc__content h2 {
+    margin-bottom: 1.5rem;
+}
+
+/* tonton section */
+.tonton__section {
+    display: block;
+
+    padding: 4.5rem 0;
+
+    transition: var(--global-trans);
+
+    border-radius: 1rem;
+}
+
+.tonton__section:hover {
+    background-color: var(--black);
+}
+
+.tonton__section i,
+.tonton__section h4 {
+    transition: var(--global-trans);
+}
+
+.tonton__section:hover h4 {
+    color: var(--white);
+}
+
+.tonton__section:hover i {
+    transform: scale(1.2);
+
+    color: var(--white);
+}
+
+.tonton__btn {
+    font-size: 4.5rem;
+}
+
+.tonton__desc h4 {
+    font-weight: 800;
+}
+
 /*******************************************/
 /*               RESPONEIVES               */
 /*******************************************/
 
 /*=============== tablet view ===============*/
-
 @media (max-width: 991px){
-  /* Navbar */
-  .vl{
-    display: none;
-  }
-  .form__search{
-    display: none !important;
-  }
-  .apaitu__desc{
-    padding: 0;
-  }
-  .apaitu__desc__content{
-    padding: 72px 64px;
-  }
-}
-@media (max-width: 767px){
+  /****************************************/
+  /*               VARIABLE               */
+  /****************************************/
+  :root {
+    /*font and typography*/
+    --reg-size: 16px;
+    --medium-size: 18px;
+    --big-size: 24px;
   
-  /* Footer */
-  .left__footer{
-    margin-bottom: 36px;
+    /*padding and margin*/
+    --m-min: 4.5rem;
+    --m-max: 4rem;
+    --mx-min: 0 4.5rem;
+    --mx-max: 0 4rem;
+  
+    /*utility-radius*/
+    --sm-rad: 0;
+  
+    --global-trans: all .3s ease-in-out;
   }
-  .right__footer{
-    justify-content: end;
-  }
-  .right__footer ul{
-    padding: 0!important;
-  }
-  .footer__title{
-    display: block;
-    color: white;
-  }
-  .footer__sosmed{
-    justify-content: center !important;
-  }
-  .footer__deskripsi, .footer__title__logo{
-    text-align: center;
-  }
-  .footer__sosmed__list{
-    justify-content: center;
+  /*********************************************/
+  /*               GENERAL STYLE               */
+  /*********************************************/
+  h1 {
+      font-size: 3.75rem;
   }
 
-  /* about */
-  .apaitu__desc__content{
-    padding: 36px 40px;
+  h2 {
+      font-size: 2.5rem;
   }
-  .apaitu__image__content{
-    height: 240px;
+
+  /* Navbar */
+  .vl {
+      display: none;
+  }
+
+  .form__search {
+      display: none !important;
+  }
+
+  .navbar__collapse {
+      margin-top: 1.5rem;
+  }
+
+  /* footer */
+  .footer__title__logo {
+      margin-bottom: 1.5rem;
+  }
+
+  .left__footer {
+      margin-bottom: 1.875rem;
+  }
+
+  .right__footer {
+      justify-content: start;
+  }
+
+  .quick__links ul,
+  .nama__liga1 ul,
+  .nama__liga2 ul {
+      padding-left: 0;
+  }
+
+  /* gabung section */
+  .gabung__content,
+  .gabung__content2 {
+      padding: 3rem;
+  }
+
+  /**************************************/
+  /*               INDEX                */
+  /**************************************/
+  .left__jumbotron {
+      min-height: 45rem;
+      padding-top: 11.25rem;
+  }
+
+  .right__jumbotron {
+      height: 25rem;
+  }
+
+  /* stream choose */
+  .stream__choose .row p {
+      max-width: 100%;
+  }
+
+  #list__video {
+      padding-left: 0;
+  }
+
+  .item__vid {
+      width: 100%;
+      padding: 4.5rem 0 0;
+  }
+
+  .video__play {
+      margin: 0 1rem;
+  }
+
+  .video__play .bg__img,
+  .box__video {
+      width: 100%;
+      max-width: 100%;
+  }
+
+  /* testi */
+  .left__testi {
+      height: 25rem;
+      margin-bottom: 2.25rem;
+
+      justify-content: center;
+  }
+
+  .left__testi .bg__img {
+      width: 67%;
+      height: 100%;
+  }
+
+  /**************************************/
+  /*               ABOUT                */
+  /**************************************/
+  .about__jumbotron .left__jumbotron {
+      min-height: 41rem;
+  }
+
+  .apaitu__desc__content {
+      height: 100%;
+      padding: 4rem 3rem;
   }
 }
+
+
 /*=============== phone view ===============*/
 @media (max-width: 576px){
-  .footer__nama__liga{
-    justify-content: center;
+  /****************************************/
+  /*               VARIABLE               */
+  /****************************************/
+  :root {
+    /*font and typography*/
+    --reg-size: 16px;
+    --medium-size: 18px;
+    --big-size: 24px;
+  
+    /*padding and margin*/
+    --m-min: 4rem;
+    --m-max: .75rem;
+    --mx-min: 0 4rem;
+    --mx-max: 0 .75rem;
+  
+    /*utility-radius*/
+    --sm-rad: 0;
+  
+    --global-trans: all .3s ease-in-out;
+  }
+  /*********************************************/
+  /*               GENERAL STYLE               */
+  /*********************************************/
+  h1 {
+      font-size: 2.5rem;
   }
 
-  /* about */
-  .aboutus__section{
-    margin-bottom: 72px;
+  h2 {
+      font-size: 2.25rem;
   }
-  .aboutus__image__content{
-    height: 480px;
+
+  h4 {
+      font-size: 1.5rem;
   }
-  .aboutus__content .aboutus__desc{
-    min-height: 600px;
-    height: auto;
+
+  h6 {
+      font-size: 1rem;
   }
-  .aboutus__container{
-    padding: 0px 12px;
-    margin: 0;
+
+  /* footer */
+  .fblok-x {
+      padding: 0 .75rem;
   }
-  .apaitu__section{
-    min-height: 600px;
-    height: auto;
-    text-align: --web;
+
+  .footer__title__logo h4 {
+      text-align: center;
   }
-  .apaitu__desc__content{
-    padding: 16px 24px;
+
+  .footer__deskripsi {
+      max-width: 100%;
+      margin: auto;
+
+      text-align: center;
   }
-  .apaitu__content{
-    width: 100%;
-    margin: 0 auto;
+
+  .footer__content {
+      padding: 4.5rem 0;
+  }
+
+  .right__footer {
+      margin: auto;
+
+      justify-content: center;
+  }
+
+  .nama__liga1,
+  .nama__liga2 {
+      padding-right: 0;
+      padding-left: 0;
+  }
+
+  .footer__sosmed {
+      margin-bottom: 1.875rem;
+  }
+
+  .footer__sosmed ul {
+      justify-content: center;
+  }
+
+  .bottom__footer p {
+      font-size: 14px;
+  }
+
+  .fl__head {
+      display: block;
+  }
+
+  /* gabung section */
+  .gabung__content,
+  .gabung__content2 {
+      padding: 2.25rem;
+  }
+
+  .gabung__content h2,
+  .gabung__content2 h2 {
+      margin-bottom: 1.875rem;
+  }
+
+  /**************************************/
+  /*               INDEX                */
+  /**************************************/
+  .about__jumbotron .left__jumbotron {
+      min-height: 40rem;
+  }
+
+  .left__jumbotron {
+      min-height: 45rem;
+      padding-top: 8.5rem;
+  }
+
+  .left__jumbotron.blok-x {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+  }
+
+  .left__jumbotron h1 {
+      margin-bottom: 1.5rem;
+  }
+
+  .right__jumbotron {
+      height: 25rem;
+  }
+
+  .btn__stream span,
+  .btn__stream i {
+      font-size: 1rem;
+  }
+
+  .stream__now {
+      margin-bottom: 4rem;
+  }
+
+  .liga__list {
+      justify-content: center;
+  }
+
+  .link__logo {
+      margin: 0 1.125rem 2.25rem;
+  }
+
+  .link__logo:last-child {
+      margin: 0 1.125rem 2.25rem;
+  }
+
+  /* stream choose */
+  .player__tumbnail {
+      display: none !important;
+  }
+
+  .item__vid {
+      padding: 2.25rem 0 0;
+  }
+
+  .video__play {
+      margin: 0;
+  }
+
+  .ll__video {
+      height: 2.25rem;
+  }
+
+  /* test */
+  .right__testi h2 {
+      margin-bottom: 2.25rem;
+  }
+
+  .left__testi {
+      width: 100%;
+      height: 22rem;
+      margin: 0 auto 1.875rem;
+
+      align-items: end;
+  }
+
+  .testi__point li {
+      margin-bottom: 1.875rem;
+  }
+
+  .left__testi .bg__img {
+      width: 90%;
+      height: 100%;
+  }
+
+  /**************************************/
+  /*               ABOUT                */
+  /**************************************/
+  .apaitu__desc {
+      height: auto;
+  }
+
+  .apaitu__image__content {
+      height: 25rem;
+  }
+
+  .apaitu__desc__content {
+      height: auto;
+      padding: 2rem;
+  }
+
+  /* tonton section */
+  .tonton__btn {
+      font-size: 3.75rem;
   }
 }
 

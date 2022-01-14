@@ -5,48 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Family Football | About</title>
+    <title>SoccerPlay Tv | About</title>
 
     <!-- Boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Icon -->
-    <link rel="stylesheet" href="assets/vendor/icofont/icofont.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <script src="https://unpkg.com/akar-icons-fonts"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendor/icofont/icofont.min.css"> <!-- icofont -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> <!-- bootstrap icon -->
+    <script src="https://unpkg.com/akar-icons-fonts"></script> <!-- akar icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- material icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- fontawesome icon -->
+    <link rel="stylesheet" href="assets/CSS/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/CSS/owl.theme.default.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/CSS/styles.css">
-
-
 </head>
 
 <body>
+    <!-- header -->
     <header>
         <nav class="py-3 navbar navbar-expand-lg navbar-light" id="navbar">
             <div class="container-fluid container">
-                <a class="navbar-brand nav__margin nav__logo" href="home.html"> <i class="icofont-fox-alt me-1"></i>
-                    Navbar</a>
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand nav__logo" href="index.html">
+                    <i class="icofont-fox-alt me-2 d-flex justify-content-center align-items-center"></i>
+                    <span class="d-block">SoccerPlay Tv</span>
+                </a>
+
+                <button class="navbar-toggler shadow-none navbar__toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="ai-grid"></i>
+                    </span>
                 </button>
+
                 <div class="vl"></div>
+
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="nav nav-pills justify-content-center">
+                    <ul class="nav nav-pills justify-content-center navbar__collapse">
                         <li class="nav-item nav__margin">
-                            <a class="nav-link" id="nav__home" aria-current="page" href="home.html">Home</a>
+                            <a class="nav-link" id="nav__home" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item nav__margin">
                             <a class="nav-link" id="nav__about" href="about.html">About</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" id="nav__category" data-bs-toggle="dropdown" href="about.html"
-                                role="button" aria-expanded="false">Category <span id="icon__navbar__dropdown"><i
-                                        class="ai-chevron-up"></i></span>
+                            <a class="nav-link" id="nav__category" data-bs-toggle="dropdown" href="about.html" role="button" aria-expanded="false">
+                                <span class="me-2">Category</span>
+                                <span id="icon__navbar__dropdown"><i class="ai-chevron-up"></i></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Premier League</a></li>
@@ -60,62 +65,88 @@
                     </ul>
                 </div>
                 <form action="" class="d-flex form__search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
-        </nav>
+        </nav> <!-- end nav -->
     </header>
-    <!-- about us section -->
-    <div class="aboutus__section container-fluid">
-        <div class="aboutus__body">
-            <div class="aboutus__content">
-                <div class="row">
-                    <!-- about us desc -->
-                    <div class="aboutus__desc d-flex align-items-center col-sm-7 col-12">
-                        <div class="aboutus__container">
-                            <div class="aboutus__desc__content">
-                                <h1>About Us.</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat totam alias
-                                    voluptates
-                                    eius sequi molestiae impedit consectetur quisquam? Aut quae perferendis atque illum
-                                    incidunt
-                                    aliquid illo. Pariatur suscipit magni obcaecati!</p>
-                                <button type="button" class="btn btn-dark btn__about__stream"><i
-                                        class="bi bi-cast text-white me-2"></i>
-                                    Stream Now</button>
-                            </div>
+    <!-- end header -->
+
+    <!-- jumbotron -->
+    <div class="about__jumbotron container-fluid p-0">
+        <div class="jumbotron__section">
+            <div class="row m-0">
+                <!-- left -->
+                <div class="col-lg-7 col-12 p-0">
+                    <div class="left__jumbotron blok-x">
+                        <h1>About Us.</h1>
+                        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum odio adipiscing gravida proin viverra sit. Id tincidunt quis eu, sed suspendisse.</h6>
+                        <div class="stream__now">
+                            <a href="#" class="btn__stream">
+                                <i class="bi bi-cast"></i>
+                                <span>Stream Now</span>
+                            </a>
+                        </div>
+                        <div class="liga__list">
+                            <a href="#" target="_blank" class="link__logo">
+                                <img src="assets/images/premier-league.png" alt="premiere-league" class="ll__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="Premiere League">
+                            </a>
+                            <a href="#" target="_blank" class="link__logo">
+                                <img src="assets/images/laliga.png" alt="laliga" class="ll__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="LaLiga">
+                            </a>
+                            <a href="#" target="_blank" class="link__logo">
+                                <img src="assets/images/serie-a.png" alt="seria-a" class="ll__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="Serie A">
+                            </a>
+                            <a href="#" target="_blank" class="link__logo">
+                                <img src="assets/images/bundesliga.png" alt="bundesliga" class="ll__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="BundesLiga">
+                            </a>
+                            <a href="#" target="_blank" class="link__logo">
+                                <img src="assets/images/bri-liga1.png" alt="briliga1" class="ll__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="BRI Liga 1">
+                            </a>
+                            <a href="#" target="_blank" class="link__logo">
+                                <img src="assets/images/champion-leauge.png" alt="championleague" class="ll__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="UEFA Champions League">
+                            </a>
+                            <a href="#" target="_blank" class="link__logo">
+                                <img src="assets/images/europa-leagure.png" alt="europaleague" class="ll__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="Europa League">
+                            </a>
+                            <a href="#" target="_blank" class="link__logo">
+                                <img src="assets/images/ligue1.png" alt="ligue1" class="ll__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="Ligue 1 UberEats">
+                            </a>
                         </div>
                     </div>
-                    <!-- about us image -->
-                    <div class="aboutus__image col-sm-5 col-12 p-0">
-                        <div class="aboutus__image__content"
-                            style="background-image: url('assets/images/about-1.png');">
+                </div>
 
-                        </div>
-                        <!-- <img class="img-fluid" src="/assets/images/about-1.png" alt=""> -->
+                <!-- right -->
+                <div class="col-lg-5 col-12 p-0">
+                    <div class="right__jumbotron">
+                        <div class="bg__img" style="background-image: url(assets/images/about-1.png);"></div>
                     </div>
                 </div>
             </div>
         </div>
+    </div> <!-- end container -->
+    <!-- end jumbotron -->
+
+    <!-- dummy ads -->
+    <div class="drop__ads blok-full bg__sl">
+        <div class="dummy__content d-flex justify-content-center align-items-center">
+            <p>Drop your market &#128513;</p>
+        </div>
     </div>
-    <!-- endabout us section -->
-    <!-- block srction -->
-    <div class="block__section">
-    </div>
-    <!-- end block section -->
-    <!-- apaitu__section -->
-    <div class="apaitu__section">
-        <div class="apaitu__body container">
-            <div class="apaitu__content row">
-                <!-- apa itu kiri -->
-                <div class="col-12 col-md-5 apaitu__image p-0">
-                    <div class="apaitu__image__content" style="background-image: url('assets/images/about-2.png');">
-                    </div>
+    <!-- end dummy ads -->
+
+    <!-- apa itu section -->
+    <div class="blok-full">
+        <div class="container">
+            <div class="row">
+                <!-- left -->
+                <div class="col-12 col-sm-5 p-0">
+                    <div class="bg__img apaitu__image__content" style="background-image: url('assets/images/about-2.png');"></div>
                 </div>
-                <!-- end apa itu kiri -->
-                <!-- apa itu kanan -->
-                <div class="col-12 col-md-7  apaitu__desc align-self-center">
+                
+                <!-- right -->
+                <div class="col-12 col-sm-7 apaitu__desc">
                     <div class="apaitu__desc__content">
                         <h2>Apa itu Family Football</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam volutpat vel pellentesque
@@ -124,112 +155,112 @@
                             nisl ac pretium. Justo, ac aliquet pellentesque nulla.</p>
                     </div>
                 </div>
-                <!-- end apa itu kanan  -->
             </div>
         </div>
     </div>
-    <!-- end apaitu -->
+    <!-- end apa itu section -->
+    
     <!-- tonton section -->
-    <div class="tonton__section">
-        <div class="tonton__body container">
-            <div class="tonton__content">
-                <!-- tonton button -->
-                <div class="tonton__btn text-center mb-4">
-                    <i class="icofont-play-alt-1"></i>
+    <div class="blok-x">
+        <div class="container p-0">
+            <a class="tonton__section" href="#">
+                <div class="tonton__btn text-center mb-5">
+                    <i class="bi bi-play-circle-fill d-flex align-items-center justify-content-center"></i>
                 </div>
                 <div class="tonton__desc text-center">
                     <h4>Tonton Sekarang</h4>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
     <!-- end tonton -->
+
     <!-- gabung section -->
-    <div class="gabung__section">
-        <div class="gabung__body container">
-            <div class="gabung__content">
-                <!-- gabung content title -->
-                <div class="gabung__content__title">
-                    <h2>Bergabung dan dapatkan info terbaru dari kami</h2>
+    <div class="blok-full">
+        <div class="container">
+            <div class="gabung__content2">
+                <h2>Gabung kedalam komunitas kami!</h2>
+
+                <div class="join__tele">
+                    <a href="https://t.me/FamFootball" target="_blank" class="btn__tele">
+                        <i class="fab fa-telegram-plane me-2"></i>
+                        <span>Join our telegram</span>
+                    </a>
                 </div>
-                <button type="button" class="btn gabung__content__tele">
-                    <p> <i class="ai-telegram-fill"></i>Join our telegram</p>
-                </button>
             </div>
         </div>
     </div>
     <!-- end gabung section -->
-    <!-- footer -->
-    <!-- FINISH -->
-    <footer>
-        <div class="container">
-            <div class="footer__content row justify-content-between">
-                <!-- left footer -->
-                <div class="left__footer col-md-5 col-12">
-                    <!-- lef footer image -->
-                    <div class="footer__title__logo">
-                        <h4>
-                            <i class="icofont-fox-alt me-1"></i> Name Page
-                        </h4>
-                    </div> <!-- end lef footer image -->
-                    <!-- left footer content -->
-                    <div class="footer__deskripsi">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt odit minus pariatur provident
-                            placeat. Nisi libero minima rem quisquam fugit aspernatur officia fuga, optio incidunt
-                            pariatur nemo temporibus quos maxime.</p>
-                    </div> <!-- end left footer content -->
-                    <div class="footer__sosmed">
-                        <ul class="nav justify-content-lg-start footer__sosmed__list">
-                            <li><a href="" target="_blank"><i class="icofont-youtube-play"></i></a></li>
-                            <li><a href="" target="_blank"><i class="icofont-instagram"></i></a></li>
-                            <li><a href="https://t.me/FamFootball" target="_blank"><i
-                                        class="icofont-telegram black"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div> <!-- end left footer -->
-                <!-- right footer -->
-                <div class="right__footer col-lg-6 col-md-7 col-12 row">
-                    <!-- quick link -->
-                    <div class="quick__links col-md-4 col-4">
-                        <h5 class="footer__title">Quick Links</h5>
-                        <ul>
-                            <li><a href="home.html">Home <i class="ai-arrow-up-right"></i></a></li>
-                            <li><a href="about.html">About <i class="ai-arrow-up-right"></i></a></li>
-                            <li><a href="stream.html">Stream Now <i class="ai-arrow-up-right"></i></a></li>
-                        </ul>
-                    </div> <!-- end quick link -->
-                    <!-- Nama Liga -->
-                    <div class="footer__nama__liga col-8 row">
-                        <h5 class="footer__title text-center">Streaming</h5>
-                        <div class="nama__liga1 col-8 col-sm-6">
-                            <ul>
-                                <li><a href="liga">Premier League <i class="ai-arrow-up-right"></i></a></li>
-                                <li><a href="liga">LaLiga <i class="ai-arrow-up-right"></i></a></li>
-                                <li><a href="liga">Serie A <i class="ai-arrow-up-right"></i></a></li>
-                                <li><a href="liga">Ligue 1 <i class="ai-arrow-up-right"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="nama__liga2 col-8 col-sm-6">
-                            <ul>
-                                <li><a href="liga">Bundesliga<i class="ai-arrow-up-right"></i></a></li>
-                                <li><a href="liga">BRI Liga 1 <i class="ai-arrow-up-right"></i></a></li>
-                                <li><a href="liga">Pro League <i class="ai-arrow-up-right"></i></a></li>
-                                <li><a href="liga">Pro League <i class="ai-arrow-up-right"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- end nama liga -->
-                </div> <!-- end social connect -->
-            </div> <!-- end right footer -->
-        </div>
-        </div> <!-- end container -->
 
-        <!-- bottom footer -->
-        <div class="bottom__footer text-center py-2">
-            <p>&copy; 2022 | Family Football. All right reserved</p>
-        </div> <!-- end bottom footer -->
-    </footer> <!-- end footer -->
+    <!-- footer -->
+    <footer>
+        <div class="fblok-x">
+            <div class="container">
+                <div class="footer__content row justify-content-between">
+                    <!-- left footer -->
+                    <div class="left__footer col-lg-5 col-12">
+                        <!-- footer title logo -->
+                        <div class="footer__title__logo">
+                            <a href="index.html"><h4 class="mb-0"><i class="icofont-fox-alt me-1"></i> SoccerPlay Tv</h4></a>
+                        </div>
+    
+                        <!-- footer desc -->
+                        <div class="footer__deskripsi">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius facilisis sed velit ante fermentum quam.</p>
+                        </div>
+                    </div> <!-- end left footer -->
+                    
+                    <!-- right footer -->
+                    <div class="right__footer col-lg-7 col-12 row">
+                        <!-- quick link -->
+                        <div class="quick__links col-md-4 col-6">
+                            <ul>
+                                <li><a href="index.html" class="d-flex"><span class="d-block me-2">Home</span><i class="ai-arrow-up-right"></i></a></li>
+                                <li><a href="about.html" class="d-flex"><span class="d-block me-2">About</span><i class="ai-arrow-up-right"></i></a></li>
+                                <li><a href="stream.html" class="d-flex"><span class="d-block me-2">Stream Now</span><i class="ai-arrow-up-right"></i></a></li>
+                            </ul>
+                        </div> <!-- end quick link -->
+    
+                        <!-- Nama Liga -->
+                        <div class="footer__nama__liga col-md-8 col-6 row">
+                            <div class="nama__liga1 col-sm-6 col-12">
+                                <ul>
+                                    <li><a href="#" class="d-flex"><span class="d-block me-2">Premier League</span><i class="ai-arrow-up-right"></i></a></li>
+                                    <li><a href="#" class="d-flex"><span class="d-block me-2">LaLiga</span><i class="ai-arrow-up-right"></i></a></li>
+                                    <li><a href="#" class="d-flex"><span class="d-block me-2">Seria A</span><i class="ai-arrow-up-right"></i></a></li>
+                                    <li><a href="#" class="d-flex"><span class="d-block me-2">Ligue 1</span><i class="ai-arrow-up-right"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="nama__liga2 col-sm-6 col-12">
+                                <ul>
+                                    <li><a href="#" class="d-flex"><span class="d-block me-2">BundesLiga</span><i class="ai-arrow-up-right"></i></a></li>
+                                    <li><a href="#" class="d-flex"><span class="d-block me-2">BRI Liga 1</span><i class="ai-arrow-up-right"></i></a></li>
+                                    <li><a href="#" class="d-flex"><span class="d-block me-2">Pro League</span><i class="ai-arrow-up-right"></i></a></li>
+                                    <li><a href="#" class="d-flex"><span class="d-block me-2">Pro League</span><i class="ai-arrow-up-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end nama liga -->
+                    </div> <!-- end social connect -->
+                </div> <!-- end footer content -->
+    
+                <!-- footer sosmed -->
+                <div class="footer__sosmed">
+                    <ul class="nav">
+                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://t.me/FamFootball" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div> <!-- end footer sosmed -->
+    
+                <!-- bottom footer -->
+                <div class="bottom__footer text-center pb-4">
+                    <p class="mb-0">&copy; 2022 | Family Football. All right reserved</p>
+                </div> <!-- end bottom footer -->
+            </div> <!-- end container -->
+        </div> <!-- end blok x -->
+    </footer>
+    <!-- end footer -->
 
     <!-- Script -->
     <!-- bootsrap -->
@@ -237,8 +268,8 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
