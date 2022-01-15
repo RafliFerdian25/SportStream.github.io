@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoccerPlay TV | Stream</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Icon -->
+    <link rel="stylesheet" href="assets/vendor/icofont/icofont.min.css" />
+    <!-- icofont -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <!-- bootstrap icon -->
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <!-- akar icon -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- material icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="assets/CSS/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/CSS/owl.theme.default.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/CSS/styles.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="py-3 navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container-fluid container">
+          <a class="navbar-brand nav__logo" href="index.html">
+            <i
+              class="icofont-fox-alt me-2 d-flex justify-content-center align-items-center"
+            ></i>
+            <span class="d-block">SoccerPlay Tv</span>
+          </a>
+
+          <button
+            class="navbar-toggler shadow-none navbar__toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
+              <i class="ai-grid"></i>
+            </span>
+          </button>
+
+          <div class="vl"></div>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav nav-pills justify-content-center navbar__collapse">
+              <li class="nav-item nav__margin">
+                <a
+                  class="nav-link"
+                  id="nav__home"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item nav__margin">
+                <a class="nav-link" id="nav__about" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  id="nav__category"
+                  data-bs-toggle="dropdown"
+                  href="about.html"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  <span class="me-2">Category</span>
+                  <span id="icon__navbar__dropdown"
+                    ><i class="ai-chevron-up"></i
+                  ></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Premier League</a></li>
+                  <li><a class="dropdown-item" href="#">LaLiga</a></li>
+                  <li><a class="dropdown-item" href="#">Serie A</a></li>
+                  <li><a class="dropdown-item" href="#">Ligue 1</a></li>
+                  <li><a class="dropdown-item" href="#">Bundesliga</a></li>
+                  <li><a class="dropdown-item" href="#">BRI Liga 1</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <form action="" class="d-flex form__search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <!-- header skor -->
+    <div class="container stream">
+      <div class="stream_header">
+        <div class="header_skor d-block bg__img">
+          <div class="row">
+            <div class="col-4 team_1 text-center">
+              <img
+                src="assets/images/club/epl-MU.png"
+                class="logo_club"
+                alt=""
+              />
+              <h5 class="mt-3">Manchaster United</h5>
+            </div>
+            <div
+              class="col-4 skor team_1 align-items-center d-flex justify-content-center"
+            >
+              <div class="skore d-flex">
+                <h3 class="team_1">0</h3>
+                <h3 class="mx-4">-</h3>
+                <h3 class="team_2">5</h3>
+              </div>
+
+              <p class="position-absolute time">23.30</p>
+            </div>
+
+            <div class="col-4 team_2 text-center">
+              <img
+                src="assets/images/club/epl-MU.png"
+                class="logo_club"
+                alt=""
+              />
+              <h5 class="mt-3">Manchaster United</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end header skor -->
+
+    <!-- play video -->
+    <div class="container play">
+      <div class="row">
+        <div
+          class="col-lg-10 col-12 play_video bg__dark d-flex align-items-center justify-content-center"
+        >
+          <a href="">
+            <i class="bi bi-play-circle-fill"></i>
+          </a>
+        </div>
+        <div class="col-lg-2 col-12 add_slot">
+          <div
+            class="dummy__content d-flex align-items-center justify-content-center"
+          >
+            <p>Ad Slot Available</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end play video -->
+
+    <!-- dummy ads -->
+    <div class="drop__ads blok-full bg__sl">
+      <div
+        class="dummy__content d-flex justify-content-center align-items-center"
+      >
+        <p>Drop your market &#128513;</p>
+      </div>
+    </div>
+    <!-- end dummy ads -->
+
+    <!-- info terbaru -->
+    <div class="info_terbaru">
+      <div class="container">
+        <div class="row bg__dark">
+          <div class="col-lg-6 col-12">
+            <h2 class="text-white">Dapatkan info terbaru dari kami!</h2>
+          </div>
+          <div
+            class="col-lg-6 col-12 social_media justify-content-center d-flex"
+          >
+            <a href=""
+              ><li class="text-white d-inline-block text-center">
+                <i class="bi bi-instagram text-white"></i>
+                <p class="text-white">SoccerPlayTV</p>
+              </li></a
+            >
+            <a href="https://t.me/FamFootball"
+              ><li class="text-white d-inline-block text-center">
+                <i class="bi bi-telegram text-white"></i>
+                <p class="text-white">SoccerPlayTV</p>
+              </li></a
+            >
+            <a href=""
+              ><li class="text-white d-inline-block text-center">
+                <i class="bi bi-youtube text-white"></i>
+                <p class="text-white">SoccerPlayTV</p>
+              </li></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end gabung section -->
+
+    <!-- footer -->
+    <footer>
+      <div class="fblok-x">
+        <div class="container">
+          <div class="footer__content row justify-content-between">
+            <!-- left footer -->
+            <div class="left__footer col-lg-5 col-12">
+              <!-- footer title logo -->
+              <div class="footer__title__logo">
+                <a href="index.html"
+                  ><h4 class="mb-0">
+                    <i class="icofont-fox-alt me-1"></i> SoccerPlay Tv
+                  </h4></a
+                >
+              </div>
+
+              <!-- footer desc -->
+              <div class="footer__deskripsi">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Varius facilisis sed velit ante fermentum quam.
+                </p>
+              </div>
+            </div>
+            <!-- end left footer -->
+
+            <!-- right footer -->
+            <div class="right__footer col-lg-7 col-12 row">
+              <!-- quick link -->
+              <div class="quick__links col-md-4 col-6">
+                <ul>
+                  <li class="fl__head">Quick Links</li>
+                  <li>
+                    <a href="index.html" class="d-flex"
+                      ><span class="d-block me-2">Home</span
+                      ><i class="ai-arrow-up-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="about.html" class="d-flex"
+                      ><span class="d-block me-2">About</span
+                      ><i class="ai-arrow-up-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="stream.html" class="d-flex"
+                      ><span class="d-block me-2">Stream Now</span
+                      ><i class="ai-arrow-up-right"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- end quick link -->
+
+              <!-- Nama Liga -->
+              <div class="footer__nama__liga col-md-8 col-6 row">
+                <div class="nama__liga1 col-sm-6 col-12">
+                  <ul>
+                    <li class="fl__head">List League</li>
+                    <li>
+                      <a href="#" class="d-flex"
+                        ><span class="d-block me-2">Premier League</span
+                        ><i class="ai-arrow-up-right"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" class="d-flex"
+                        ><span class="d-block me-2">LaLiga</span
+                        ><i class="ai-arrow-up-right"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" class="d-flex"
+                        ><span class="d-block me-2">Seria A</span
+                        ><i class="ai-arrow-up-right"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" class="d-flex"
+                        ><span class="d-block me-2">Ligue 1</span
+                        ><i class="ai-arrow-up-right"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="nama__liga2 col-sm-6 col-12">
+                  <ul>
+                    <li>
+                      <a href="#" class="d-flex"
+                        ><span class="d-block me-2">BundesLiga</span
+                        ><i class="ai-arrow-up-right"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" class="d-flex"
+                        ><span class="d-block me-2">BRI Liga 1</span
+                        ><i class="ai-arrow-up-right"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" class="d-flex"
+                        ><span class="d-block me-2">Pro League</span
+                        ><i class="ai-arrow-up-right"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" class="d-flex"
+                        ><span class="d-block me-2">Pro League</span
+                        ><i class="ai-arrow-up-right"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- end nama liga -->
+            </div>
+            <!-- end social connect -->
+          </div>
+          <!-- end footer content -->
+
+          <!-- footer sosmed -->
+          <div class="footer__sosmed">
+            <ul class="nav">
+              <li>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://t.me/FamFootball" target="_blank"
+                  ><i class="fab fa-telegram-plane"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!-- end footer sosmed -->
+
+          <!-- bottom footer -->
+          <div class="bottom__footer text-center pb-4">
+            <p class="mb-0">
+              &copy; 2022 | Family Football. All right reserved
+            </p>
+          </div>
+          <!-- end bottom footer -->
+        </div>
+        <!-- end container -->
+      </div>
+      <!-- end blok x -->
+    </footer>
+    <!-- end footer -->
+    <!-- Script -->
+    <!-- bootsrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

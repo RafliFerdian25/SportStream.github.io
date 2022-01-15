@@ -10,7 +10,7 @@ jarak atas dan bawah (padding) */
 /*               GOOGLE FONT               */
 /*******************************************/
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Spline+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Spline+Sans:wght@400;600;700&display=swap");
 @import url(../vendor/fonts/fonts.css);
 /****************************************/
 /*               VARIABLE               */
@@ -21,15 +21,15 @@ jarak atas dan bawah (padding) */
   /*color*/
   --white: rgba(255, 255, 255, 1);
   --black: rgba(0, 0, 0, 1);
-  --scnd-light: rgba(240,240,240);
+  --scnd-light: rgba(240, 240, 240);
 
   /*font and typography*/
   --reg-size: 16px;
   --medium-size: 18px;
   --big-size: 24px;
-  
-  --head-font: 'Plus Jakarta Sans', sans-serif;
-  --body-font: 'Plus Jakarta Sans', sans-serif;
+
+  --head-font: "Plus Jakarta Sans", sans-serif;
+  --body-font: "Plus Jakarta Sans", sans-serif;
 
   /*padding and margin*/
   --m-min: 4.5rem;
@@ -39,241 +39,241 @@ jarak atas dan bawah (padding) */
 
   /*utility-radius*/
   --sm-rad: 0;
-  
-  --global-trans: all .3s ease-in-out;
+
+  --global-trans: all 0.3s ease-in-out;
 }
 
 /*********************************************/
 /*               GENERAL STYLE               */
 /*********************************************/
 * {
-    font-family: var(--body-font);
-    font-weight: 400;
+  font-family: var(--body-font);
+  font-weight: 400;
 
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 
-    color: black;
+  color: black;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h1 {
-    font-family: var(--head-font);
-    font-size: 4rem;
-    font-weight: 700;
+  font-family: var(--head-font);
+  font-size: 4rem;
+  font-weight: 700;
 }
 
 h2 {
-    font-family: var(--head-font);
-    font-size: 3rem;
-    font-weight: 700;
+  font-family: var(--head-font);
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 h3 {
-    font-size: 2.25rem;
-    font-weight: 700;
+  font-size: 2.25rem;
+  font-weight: 700;
 
-    margin-bottom: 18px !important;
+  margin-bottom: 18px !important;
 }
 
 h4 {
-    font-size: 1.875rem;
-    font-weight: 700;
+  font-size: 1.875rem;
+  font-weight: 700;
 }
 
 h5 {
-    font-size: 18px;
-    font-weight: 700;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 h6 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .blok-full {
-    padding: var(--m-min) var(--m-max);
+  padding: var(--m-min) var(--m-max);
 }
 
 .blok-x {
-    padding: var(--mx-max);
+  padding: var(--mx-max);
 }
 
 .bg__img {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .bg__dark {
-    background-color: var(--black);
+  background-color: var(--black);
 }
 
 .bg__sl {
-    background-color: var(--scnd-light);
+  background-color: var(--scnd-light);
 }
 
 /*****************/
 /*    Navbar     */
 /*****************/
 .nav__logo {
-    display: flex;
+  display: flex;
 
-    align-items: center;
+  align-items: center;
 }
 
 .nav__logo span {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 .navbar-brand i {
-    font-size: 1.875rem;
+  font-size: 1.875rem;
 }
 
 .vl {
-    height: 1.875rem;
-    margin: 0 2rem 0 3rem;
+  height: 1.875rem;
+  margin: 0 2rem 0 3rem;
 
-    border-left: 1.5px solid rgba(0, 0, 0, .3);
+  border-left: 1.5px solid rgba(0, 0, 0, 0.3);
 }
 
 .nav__margin {
-    margin: 0 8px !important;
+  margin: 0 8px !important;
 }
 
 .navbar {
-    font-size: 14px !important;
+  font-size: 14px !important;
 }
 
 .nav-link {
-    color: black !important;
+  color: black !important;
 }
 
 .nav-link.active {
-    color: white !important;
-    border-radius: var(--sm-rad);
-    background-color: black !important;
+  color: white !important;
+  border-radius: var(--sm-rad);
+  background-color: black !important;
 }
 
 .form__search .form-control {
-    border-radius: var(--sm-rad);
+  border-radius: var(--sm-rad);
 }
 
 .navbar .btn-outline-success {
-    color: white !important;
-    border-color: black !important;
-    border-radius: var(--sm-rad);
-    background-color: black !important;
+  color: white !important;
+  border-color: black !important;
+  border-radius: var(--sm-rad);
+  background-color: black !important;
 }
 
 #navbar {
-    position: fixed;
-    top: 0;
+  position: fixed;
+  top: 0;
 
-    width: 100%;
+  width: 100%;
 
-    transition: top .3s;
+  transition: top 0.3s;
 
-    border-bottom: 1px solid rgba(0, 0, 0, .2);
-    
-    background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+  background-color: white;
 }
 
 .nav-item .nav-link,
 .nav-item .nav-link span {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
+  display: block;
 }
 
 .footer__title {
-    display: none;
+  display: none;
 }
 
 .navbar__toggler {
-    border: none;
+  border: none;
 }
 
 .navbar__toggler .navbar-toggler-icon {
-    display: flex;
+  display: flex;
 
-    background: none;
+  background: none;
 
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 /*****************/
 /*    Footer     */
 /*****************/
 footer {
-    background-color: var(--black);
+  background-color: var(--black);
 }
 
 footer p {
-    color: var(--white);
+  color: var(--white);
 }
 
 .footer__content {
-    padding: 6.25rem 0;
+  padding: 6.25rem 0;
 }
 
 .footer__title__logo {
-    margin-bottom: 1.875rem;
+  margin-bottom: 1.875rem;
 }
 
 .footer__title__logo h4,
 .footer__title__logo i {
-    color: var(--white);
+  color: var(--white);
 }
 
 .footer__deskripsi {
-    line-height: 2;
+  line-height: 2;
 
-    max-width: 24rem;
+  max-width: 24rem;
 }
 
 .right__footer {
-    justify-content: end;
+  justify-content: end;
 }
 
 .footer__sosmed {
-    margin-bottom: 2.25rem;
+  margin-bottom: 2.25rem;
 }
 
 .footer__sosmed li {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 
-    margin-right: 1.875rem;
+  margin-right: 1.875rem;
 }
 
 .footer__sosmed li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .footer__sosmed li a i {
-    transition: var(--global-trans);
+  transition: var(--global-trans);
 
-    color: var(--white);
+  color: var(--white);
 }
 
 .footer__sosmed li a:hover i {
-    color: rgba(255, 255, 255, .6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .quick__links ul li,
 .nama__liga1 ul li,
 .nama__liga2 ul li {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .quick__links ul li a i,
@@ -282,33 +282,33 @@ footer p {
 .nama__liga1 ul li a i,
 .nama__liga2 ul li a span,
 .nama__liga2 ul li a i {
-    font-weight: 500;
+  font-weight: 500;
 
-    transition: var(--global-trans);
+  transition: var(--global-trans);
 
-    color: rgba(255, 255, 255, .7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .quick__links ul li a:hover span,
 .nama__liga1 ul li a:hover span,
 .nama__liga2 ul li a:hover span {
-    color: var(--white);
+  color: var(--white);
 }
 
 .quick__links ul li a:hover i,
 .nama__liga1 ul li a:hover i,
 .nama__liga2 ul li a:hover i {
-    transform: translate(3px, -3px);
+  transform: translate(3px, -3px);
 
-    color: var(--white);
+  color: var(--white);
 }
 
 .fl__head {
-    font-weight: 700;
+  font-weight: 700;
 
-    display: none;
+  display: none;
 
-    color: var(--white);
+  color: var(--white);
 }
 
 /*************************/
@@ -316,95 +316,95 @@ footer p {
 /*************************/
 .gabung__content,
 .gabung__content2 {
-    margin: 0 .75rem;
-    padding: 4rem;
+  margin: 0 0.75rem;
+  padding: 4rem;
 
-    background-color: var(--black);
+  background-color: var(--black);
 }
 
 .gabung__content h2 {
-    max-width: 37.5rem;
-    margin-bottom: 2.25rem;
+  max-width: 37.5rem;
+  margin-bottom: 2.25rem;
 
-    -webkit-hyphens: auto;
-    hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 
-    color: white;
+  color: white;
 
-    -ms-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 .join__tele {
-    display: flex;
+  display: flex;
 }
 
 .btn__tele {
-    display: flex;
+  display: flex;
 
-    padding: .75rem 1.5rem;
+  padding: 0.75rem 1.5rem;
 
-    transition: var(--global-trans);
+  transition: var(--global-trans);
 
-    border: 1.5px solid var(--white);
-    background-color: var(--black);
+  border: 1.5px solid var(--white);
+  background-color: var(--black);
 
-    align-items: center;
+  align-items: center;
 }
 
 .btn__tele i {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 
-    color: var(--white);
+  color: var(--white);
 }
 
 .btn__tele span {
-    font-weight: 600;
+  font-weight: 600;
 
-    transition: var(--global-trans);
-    -webkit-hyphens: auto;
-    hyphens: auto;
+  transition: var(--global-trans);
+  -webkit-hyphens: auto;
+  hyphens: auto;
 
-    color: var(--white);
+  color: var(--white);
 
-    -ms-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 .btn__tele:hover {
-    background-color: rgba(255, 255, 255, .1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* gabung content 2 */
 .gabung__content2 {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    align-items: center;
+  align-items: center;
 }
 
 .gabung__content2 h2 {
-    margin-bottom: 2.25rem;
+  margin-bottom: 2.25rem;
 
-    text-align: center;
+  text-align: center;
 
-    color: white;
+  color: white;
 }
 
 /*******************/
 /*    drop ads     */
 /*******************/
 .drop__ads {
-    width: 100%;
-    height: 22.5rem;
+  width: 100%;
+  height: 22.5rem;
 }
 
 .dummy__content {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .dummy__content p {
-    font-size: 1.5rem;
-    font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 /**************************************/
@@ -412,350 +412,350 @@ footer p {
 /**************************************/
 /* jumbotron */
 .jumbotron__section {
-    max-width: 92rem;
-    margin: auto;
+  max-width: 92rem;
+  margin: auto;
 }
 
 .left__jumbotron {
-    min-height: 48.75rem;
-    padding-top: 14.75rem;
+  min-height: 48.75rem;
+  padding-top: 14.75rem;
 }
 
 .left__jumbotron h1 {
-    margin-bottom: 2.25rem;
+  margin-bottom: 2.25rem;
 }
 
 .left__jumbotron h6 {
-    line-height: 1.7;
+  line-height: 1.7;
 
-    max-width: 29.75rem;
-    margin-bottom: 1.875rem;
+  max-width: 29.75rem;
+  margin-bottom: 1.875rem;
 }
 
 .right__jumbotron,
 .right__jumbotron .bg__img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    background-color: var(--black);
+  background-color: var(--black);
 }
 
 .stream__now {
-    display: flex;
+  display: flex;
 
-    margin-bottom: 5.375rem;
+  margin-bottom: 5.375rem;
 }
 
 .btn__stream {
-    display: flex;
+  display: flex;
 
-    padding: 1.125rem 2.25rem;
+  padding: 1.125rem 2.25rem;
 
-    transition: var(--global-trans);
+  transition: var(--global-trans);
 
-    background-color: var(--black);
+  background-color: var(--black);
 
-    align-items: center;
+  align-items: center;
 }
 
 .btn__stream i {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 
-    margin-right: .625rem;
+  margin-right: 0.625rem;
 
-    transition: var(--global-trans);
+  transition: var(--global-trans);
 
-    color: var(--white);
+  color: var(--white);
 }
 
 .btn__stream span {
-    font-size: 1.125rem;
-    font-weight: 500;
+  font-size: 1.125rem;
+  font-weight: 500;
 
-    transition: var(--global-trans);
+  transition: var(--global-trans);
 
-    color: var(--white);
+  color: var(--white);
 }
 
 .btn__stream:hover {
-    background-color: rgba(0, 0, 0, .9);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .liga__list {
-    display: flex;
+  display: flex;
 
-    align-items: center;
-    flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .link__logo {
-    display: block;
+  display: block;
 
-    margin-right: 2.25rem;
-    margin-bottom: 2.25rem;
+  margin-right: 2.25rem;
+  margin-bottom: 2.25rem;
 }
 
 .link__logo:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .ll__tt {
-    height: 1.875rem;
+  height: 1.875rem;
 }
 
 /* stream choose */
 .blok-full.stream__choose {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .stream__choose .row h2 {
-    margin-bottom: 2.25rem;
+  margin-bottom: 2.25rem;
 }
 
 .stream__choose .row p {
-    max-width: 20rem;
+  max-width: 20rem;
 }
 
 #list__video {
-    padding-left: 6rem;
+  padding-left: 6rem;
 }
 
 .item__vid {
-    /* padding: 4.5rem 6.125rem 0 6.125rem; */
-    padding: 4.5rem 5vw 0 4.5vw;
+  /* padding: 4.5rem 6.125rem 0 6.125rem; */
+  padding: 4.5rem 5vw 0 4.5vw;
 }
 
 .video__play .bg__img {
-    position: relative;
+  position: relative;
 
-    width: 43vw;
-    /* width: 38.75rem; */
-    max-width: 38.75rem;
-    height: 15.75rem;
+  width: 43vw;
+  /* width: 38.75rem; */
+  max-width: 38.75rem;
+  height: 15.75rem;
 }
 
 .box__video {
-    display: flex;
+  display: flex;
 
-    width: 43vw;
-    /* width: 38.75rem; */
-    max-width: 38.75rem;
-    height: 15.75rem;
+  width: 43vw;
+  /* width: 38.75rem; */
+  max-width: 38.75rem;
+  height: 15.75rem;
 
-    background-color: rgba(255, 255, 255, .18);
+  background-color: rgba(255, 255, 255, 0.18);
 
-    backdrop-filter: blur(1rem);
-    align-items: center;
-    justify-content: center;
+  backdrop-filter: blur(1rem);
+  align-items: center;
+  justify-content: center;
 }
 
 .box__video i {
-    font-size: 3.375rem;
+  font-size: 3.375rem;
 
-    transition: var(--global-trans);
+  transition: var(--global-trans);
 }
 
 .box__video:hover i {
-    transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .ll__video {
-    position: absolute;
-    z-index: 100;
-    top: 1.5rem;
-    right: 1.75rem;
+  position: absolute;
+  z-index: 100;
+  top: 1.5rem;
+  right: 1.75rem;
 
-    width: auto !important;
-    height: 3.75rem;
+  width: auto !important;
+  height: 3.75rem;
 }
 
 .player__tumbnail {
-    position: absolute;
-    z-index: 99;
-    bottom: 0;
+  position: absolute;
+  z-index: 99;
+  bottom: 0;
 
-    width: auto !important;
+  width: auto !important;
 }
 
 .left__sc {
-    display: flex;
+  display: flex;
 
-    height: 100%;
+  height: 100%;
 
-    align-items: center;
+  align-items: center;
 }
 
 .stream__choose .owl-nav {
-    display: flex;
+  display: flex;
 
-    align-items: center;
-    justify-content: end;
+  align-items: center;
+  justify-content: end;
 }
 
 .stream__choose .owl-nav button {
-    margin-top: .5rem !important;
+  margin-top: 0.5rem !important;
 }
 
 .stream__choose .owl-nav button:hover {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 .stream__choose .owl-nav .owl-prev {
-    margin-right: 1.125rem;
+  margin-right: 1.125rem;
 }
 
 .stream__choose .owl-nav .owl-prev i,
 .stream__choose .owl-nav .owl-next i {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 
-    transition: var(--global-trans);
+  transition: var(--global-trans);
 
-    color: rgba(255, 255, 255, .7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .stream__choose .owl-nav .owl-prev i:hover,
 .stream__choose .owl-nav .owl-next i:hover {
-    color: var(--white);
+  color: var(--white);
 }
 
 /* testi */
 .right__testi h2 {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .testi__point {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .testi__point li {
-    display: flex;
+  display: flex;
 
-    margin-bottom: 2.25rem;
+  margin-bottom: 2.25rem;
 
-    align-items: center;
+  align-items: center;
 }
 
 .testi__point li:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .testi__point li img {
-    height: 2.125rem;
-    margin-right: 1.125rem;
+  height: 2.125rem;
+  margin-right: 1.125rem;
 }
 
 .left__testi {
-    display: flex;
+  display: flex;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    align-items: center;
+  align-items: center;
 }
 
 .left__testi .bg__img {
-    width: 31rem;
-    height: 86%;
+  width: 31rem;
+  height: 86%;
 }
 
 /**************************************/
 /*               ABOUT                */
 /**************************************/
 .apaitu__image__content {
-    height: 35rem;
+  height: 35rem;
 }
 
 .apaitu__desc {
-    display: flex;
+  display: flex;
 
-    height: 35rem;
-    padding: 0;
+  height: 35rem;
+  padding: 0;
 
-    align-items: center;
+  align-items: center;
 }
 
 .apaitu__desc__content {
-    padding: 5.375rem 4rem;
+  padding: 5.375rem 4rem;
 
-    background-color: black;
+  background-color: black;
 }
 
 .apaitu__desc__content h2,
 .apaitu__desc__content p {
-    color: white;
+  color: white;
 }
 
 .apaitu__desc__content h2 {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 /* tonton section */
 .tonton__section {
-    display: block;
+  display: block;
 
-    padding: 4.5rem 0;
+  padding: 4.5rem 0;
 
-    transition: var(--global-trans);
+  transition: var(--global-trans);
 
-    border-radius: 1rem;
+  border-radius: 1rem;
 }
 
 .tonton__section:hover {
-    background-color: var(--black);
+  background-color: var(--black);
 }
 
 .tonton__section i,
 .tonton__section h4 {
-    transition: var(--global-trans);
+  transition: var(--global-trans);
 }
 
 .tonton__section:hover h4 {
-    color: var(--white);
+  color: var(--white);
 }
 
 .tonton__section:hover i {
-    transform: scale(1.2);
+  transform: scale(1.2);
 
-    color: var(--white);
+  color: var(--white);
 }
 
 .tonton__btn {
-    font-size: 4.5rem;
+  font-size: 4.5rem;
 }
 
 .tonton__desc h4 {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 /*********************************************/
 /*               LIST STREAM                 */
 /*********************************************/
-.list__title{
+.list__title {
   padding-top: 154px;
 }
-.list__liga__image{
+.list__liga__image {
   padding: 36px;
   padding-bottom: 28px;
 }
-.list__liga{
+.list__liga {
   margin: 56px 0;
 }
-.match{
+.match {
   padding: 18px 0;
 }
-.stream__match__score{
+.stream__match__score {
   margin: 0 48px;
   padding: 0;
 }
-.list__liga__content li{
-  transition: background-color .5s, border-radius .5s;
+.list__liga__content li {
+  transition: background-color 0.5s, border-radius 0.5s;
 }
 .list__liga__content li:hover {
   background-color: rgba(0, 0, 0, 0.09) !important;
   border-radius: 9px;
 }
-.list__content .card{
+.list__content .card {
   position: static;
 }
 /*******************************************/
@@ -763,7 +763,7 @@ footer p {
 /*******************************************/
 
 /*=============== tablet view ===============*/
-@media (max-width: 991px){
+@media (max-width: 991px) {
   /****************************************/
   /*               VARIABLE               */
   /****************************************/
@@ -772,132 +772,131 @@ footer p {
     --reg-size: 16px;
     --medium-size: 18px;
     --big-size: 24px;
-  
+
     /*padding and margin*/
     --m-min: 4.5rem;
     --m-max: 4rem;
     --mx-min: 0 4.5rem;
     --mx-max: 0 4rem;
-  
+
     /*utility-radius*/
     --sm-rad: 0;
-  
-    --global-trans: all .3s ease-in-out;
+
+    --global-trans: all 0.3s ease-in-out;
   }
   /*********************************************/
   /*               GENERAL STYLE               */
   /*********************************************/
   h1 {
-      font-size: 3.75rem;
+    font-size: 3.75rem;
   }
 
   h2 {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
 
   /* Navbar */
   .vl {
-      display: none;
+    display: none;
   }
 
   .form__search {
-      display: none !important;
+    display: none !important;
   }
 
   .navbar__collapse {
-      margin-top: 1.5rem;
+    margin-top: 1.5rem;
   }
 
   /* footer */
   .footer__title__logo {
-      margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .left__footer {
-      margin-bottom: 1.875rem;
+    margin-bottom: 1.875rem;
   }
 
   .right__footer {
-      justify-content: start;
+    justify-content: start;
   }
 
   .quick__links ul,
   .nama__liga1 ul,
   .nama__liga2 ul {
-      padding-left: 0;
+    padding-left: 0;
   }
 
   /* gabung section */
   .gabung__content,
   .gabung__content2 {
-      padding: 3rem;
+    padding: 3rem;
   }
 
   /**************************************/
   /*               INDEX                */
   /**************************************/
   .left__jumbotron {
-      min-height: 45rem;
-      padding-top: 11.25rem;
+    min-height: 45rem;
+    padding-top: 11.25rem;
   }
 
   .right__jumbotron {
-      height: 25rem;
+    height: 25rem;
   }
 
   /* stream choose */
   .stream__choose .row p {
-      max-width: 100%;
+    max-width: 100%;
   }
 
   #list__video {
-      padding-left: 0;
+    padding-left: 0;
   }
 
   .item__vid {
-      width: 100%;
-      padding: 4.5rem 0 0;
+    width: 100%;
+    padding: 4.5rem 0 0;
   }
 
   .video__play {
-      margin: 0 1rem;
+    margin: 0 1rem;
   }
 
   .video__play .bg__img,
   .box__video {
-      width: 100%;
-      max-width: 100%;
+    width: 100%;
+    max-width: 100%;
   }
 
   /* testi */
   .left__testi {
-      height: 25rem;
-      margin-bottom: 2.25rem;
+    height: 25rem;
+    margin-bottom: 2.25rem;
 
-      justify-content: center;
+    justify-content: center;
   }
 
   .left__testi .bg__img {
-      width: 67%;
-      height: 100%;
+    width: 67%;
+    height: 100%;
   }
 
   /**************************************/
   /*               ABOUT                */
   /**************************************/
   .about__jumbotron .left__jumbotron {
-      min-height: 41rem;
+    min-height: 41rem;
   }
 
   .apaitu__desc__content {
-      height: 100%;
-      padding: 4rem 3rem;
+    height: 100%;
+    padding: 4rem 3rem;
   }
 }
 
-
 /*=============== phone view ===============*/
-@media (max-width: 576px){
+@media (max-width: 576px) {
   /****************************************/
   /*               VARIABLE               */
   /****************************************/
@@ -906,200 +905,200 @@ footer p {
     --reg-size: 16px;
     --medium-size: 18px;
     --big-size: 24px;
-  
+
     /*padding and margin*/
     --m-min: 4rem;
-    --m-max: .75rem;
+    --m-max: 0.75rem;
     --mx-min: 0 4rem;
-    --mx-max: 0 .75rem;
-  
+    --mx-max: 0 0.75rem;
+
     /*utility-radius*/
     --sm-rad: 0;
-  
-    --global-trans: all .3s ease-in-out;
+
+    --global-trans: all 0.3s ease-in-out;
   }
   /*********************************************/
   /*               GENERAL STYLE               */
   /*********************************************/
   h1 {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
 
   h2 {
-      font-size: 2.25rem;
+    font-size: 2.25rem;
   }
 
   h4 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   h6 {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   /* footer */
   .fblok-x {
-      padding: 0 .75rem;
+    padding: 0 0.75rem;
   }
 
   .footer__title__logo h4 {
-      text-align: center;
+    text-align: center;
   }
 
   .footer__deskripsi {
-      max-width: 100%;
-      margin: auto;
+    max-width: 100%;
+    margin: auto;
 
-      text-align: center;
+    text-align: center;
   }
 
   .footer__content {
-      padding: 4.5rem 0;
+    padding: 4.5rem 0;
   }
 
   .right__footer {
-      margin: auto;
+    margin: auto;
 
-      justify-content: center;
+    justify-content: center;
   }
 
   .nama__liga1,
   .nama__liga2 {
-      padding-right: 0;
-      padding-left: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .footer__sosmed {
-      margin-bottom: 1.875rem;
+    margin-bottom: 1.875rem;
   }
 
   .footer__sosmed ul {
-      justify-content: center;
+    justify-content: center;
   }
 
   .bottom__footer p {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .fl__head {
-      display: block;
+    display: block;
   }
 
   /* gabung section */
   .gabung__content,
   .gabung__content2 {
-      padding: 2.25rem;
+    padding: 2.25rem;
   }
 
   .gabung__content h2,
   .gabung__content2 h2 {
-      margin-bottom: 1.875rem;
+    margin-bottom: 1.875rem;
   }
 
   /**************************************/
   /*               INDEX                */
   /**************************************/
   .about__jumbotron .left__jumbotron {
-      min-height: 40rem;
+    min-height: 40rem;
   }
 
   .left__jumbotron {
-      min-height: 45rem;
-      padding-top: 8.5rem;
+    min-height: 45rem;
+    padding-top: 8.5rem;
   }
 
   .left__jumbotron.blok-x {
-      padding-right: 1.5rem;
-      padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
 
   .left__jumbotron h1 {
-      margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .right__jumbotron {
-      height: 25rem;
+    height: 25rem;
   }
 
   .btn__stream span,
   .btn__stream i {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   .stream__now {
-      margin-bottom: 4rem;
+    margin-bottom: 4rem;
   }
 
   .liga__list {
-      justify-content: center;
+    justify-content: center;
   }
 
   .link__logo {
-      margin: 0 1.125rem 2.25rem;
+    margin: 0 1.125rem 2.25rem;
   }
 
   .link__logo:last-child {
-      margin: 0 1.125rem 2.25rem;
+    margin: 0 1.125rem 2.25rem;
   }
 
   /* stream choose */
   .player__tumbnail {
-      display: none !important;
+    display: none !important;
   }
 
   .item__vid {
-      padding: 2.25rem 0 0;
+    padding: 2.25rem 0 0;
   }
 
   .video__play {
-      margin: 0;
+    margin: 0;
   }
 
   .ll__video {
-      height: 2.25rem;
+    height: 2.25rem;
   }
 
   /* test */
   .right__testi h2 {
-      margin-bottom: 2.25rem;
+    margin-bottom: 2.25rem;
   }
 
   .left__testi {
-      width: 100%;
-      height: 22rem;
-      margin: 0 auto 1.875rem;
+    width: 100%;
+    height: 22rem;
+    margin: 0 auto 1.875rem;
 
-      align-items: end;
+    align-items: end;
   }
 
   .testi__point li {
-      margin-bottom: 1.875rem;
+    margin-bottom: 1.875rem;
   }
 
   .left__testi .bg__img {
-      width: 90%;
-      height: 100%;
+    width: 90%;
+    height: 100%;
   }
 
   /**************************************/
   /*               ABOUT                */
   /**************************************/
   .apaitu__desc {
-      height: auto;
+    height: auto;
   }
 
   .apaitu__image__content {
-      height: 25rem;
+    height: 25rem;
   }
 
   .apaitu__desc__content {
-      height: auto;
-      padding: 2rem;
+    height: auto;
+    padding: 2rem;
   }
 
   /* tonton section */
   .tonton__btn {
-      font-size: 3.75rem;
+    font-size: 3.75rem;
   }
 
   /* ********   LIST STREAM   ********* */
@@ -1108,7 +1107,8 @@ footer p {
     padding: 0;
   }
   .match__kiri,
-  .match__kanan, .match__nama__club {
+  .match__kanan,
+  .match__nama__club {
     padding: 4px !important;
   }
   .list__liga__image {
@@ -1116,3 +1116,110 @@ footer p {
   }
 }
 
+/**************************************/
+/*               STREAM               */
+/**************************************/
+
+.stream .time {
+  margin-top: 70px;
+}
+.play {
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+.play_video {
+  height: 523px;
+}
+.play_video i {
+  font-size: 80px;
+  color: var(--white);
+}
+.play_video a:hover {
+  transform: scale(1.1);
+  transition: var(--global-trans);
+}
+.add_slot {
+  box-shadow: 1px 1px 20px 2px #888888;
+}
+.info_terbaru {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.info_terbaru .row {
+  padding: 3rem;
+}
+
+.info_terbaru a:hover {
+  transform: scale(1.07);
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.stream .stream_headers {
+  background-image: url("assets/images/liga/epl-bg-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+
+/* min */
+@media (min-width: 768px) {
+  .stream .header_skor {
+    /* ubah ke phone */
+    margin-top: 130px;
+    padding: 80px;
+  }
+  .logo_club {
+    height: 100px;
+  }
+
+  .info_terbaru a {
+    font-size: 18px;
+  }
+  .info_terbaru i {
+    font-size: 50px;
+  }
+  .info_terbaru li {
+    margin: 0 10px;
+  }
+}
+/* max */
+@media (max-width: 426px) {
+  .stream .header_skor {
+    /* ubah ke phone */
+    margin-top: 100px;
+    padding-bottom: 20px;
+  }
+  .logo_club {
+    height: 60px;
+  }
+  .header_skor {
+    padding-top: 1rem;
+  }
+
+  .info_terbaru li {
+    font-size: 13px;
+    padding: 0 5px;
+  }
+}
+@media (max-width: 375px) {
+  .stream h5 {
+    font-size: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .info_terbaru a {
+    font-size: 18px;
+  }
+  .info_terbaru i {
+    font-size: 35px;
+  }
+  .info_terbaru .social_media {
+    margin-top: 3rem;
+  }
+  .add_slot .dummy__content {
+    padding: 3rem 0;
+  }
+}
