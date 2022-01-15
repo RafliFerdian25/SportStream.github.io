@@ -184,6 +184,7 @@ h6 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
   background-color: white;
+  z-index: 999;
 }
 
 .nav-item .nav-link,
@@ -522,7 +523,6 @@ footer p {
 }
 
 .item__vid {
-  /* padding: 4.5rem 6.125rem 0 6.125rem; */
   padding: 4.5rem 5vw 0 4.5vw;
 }
 
@@ -530,7 +530,6 @@ footer p {
   position: relative;
 
   width: 43vw;
-  /* width: 38.75rem; */
   max-width: 38.75rem;
   height: 15.75rem;
 }
@@ -539,7 +538,6 @@ footer p {
   display: flex;
 
   width: 43vw;
-  /* width: 38.75rem; */
   max-width: 38.75rem;
   height: 15.75rem;
 
@@ -732,24 +730,55 @@ footer p {
 /*               LIST STREAM                 */
 /*********************************************/
 .list__title {
-  padding-top: 154px;
-}
-.list__liga__image {
-  padding: 36px;
-  padding-bottom: 28px;
+  padding-top: var(--m-max);
+  margin-bottom: 4rem;
 }
 .list__liga {
-  margin: 56px 0;
+  margin: 0 0 4.5rem;
+  padding: 2.25rem;
+}
+.list__liga__image {
+  padding: 0 0 1.875rem;
+}
+.list__liga__image img {
+  height: 4rem;
 }
 .match {
-  padding: 18px 0;
+  padding: 1.125rem 0;
+  transition: var(--global-trans);
+}
+.match__row {
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+.list__liga__content.card-body {
+  padding: 0 !important;
 }
 .stream__match__score {
-  margin: 0 48px;
   padding: 0;
 }
-.list__liga__content li {
-  transition: background-color 0.5s, border-radius 0.5s;
+.match__nama__club {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  font-weight: 600;
+}
+.match__kiri {
+  padding-right: 1rem !important;
+}
+.match__kanan {
+  padding-left: 1rem !important;
+}
+.match__kiri .match__nama__club {
+  padding-right: 1.5rem;
+}
+.match__kanan .match__nama__club {
+  padding-left: 1.5rem;
+}
+.match__club img {
+  height: 2.625rem;
 }
 .list__liga__content li:hover {
   background-color: rgba(0, 0, 0, 0.09) !important;
@@ -758,6 +787,8 @@ footer p {
 .list__content .card {
   position: static;
 }
+
+
 /*******************************************/
 /*               RESPONSIVES               */
 /*******************************************/
@@ -892,6 +923,19 @@ footer p {
   .apaitu__desc__content {
     height: 100%;
     padding: 4rem 3rem;
+  }
+
+  /*********************************************/
+  /*               LIST STREAM                 */
+  /*********************************************/
+  .list__liga {
+    margin: 0 0 3.375rem;
+  }
+  .match__kiri .match__nama__club {
+    padding-right: 1rem;
+  }
+  .match__kanan .match__nama__club {
+    padding-left: 1rem;
   }
 }
 
@@ -1100,16 +1144,35 @@ footer p {
   .tonton__btn {
     font-size: 3.75rem;
   }
-
-  /* ********   LIST STREAM   ********* */
-  .stream__match__score {
-    margin: 0 4px;
-    padding: 0;
+  
+  /*********************************************/
+  /*               LIST STREAM                 */
+  /*********************************************/
+  .list__title {
+    padding-top: calc(var(--m-max) + 2rem);
+    margin-bottom: 2.5rem;
   }
-  .match__kiri,
-  .match__kanan,
-  .match__nama__club {
-    padding: 4px !important;
+  .list__liga {
+    margin: 0 0 2.25rem;
+    padding: 1.5rem;
+  }
+  .list__liga__image img {
+    height: 3.5rem;
+  }
+  .match__club img {
+    height: 2rem;
+  }
+  .match__nama__club,
+  .stream__match__livescore,
+  .stream__match__score__v,
+  .stream__match__score__waktu {
+    font-size: .875rem;
+  }
+  .match__kanan .match__nama__club {
+    padding-left: .75rem;
+  }
+  .match__kiri .match__nama__club {
+    padding-right: .75rem;
   }
   .list__liga__image {
     align-self: center;

@@ -23,12 +23,13 @@ Folder Structure:
  ┃ ┃ ┣ 📜owl.carousel.min.js
  ┃ ┃ ┗ 📜scripts.js
  ┃ ┗ 📂vendor
- ┃   ┣ 📂akar-icons-fonts-main
  ┃   ┗ 📂font
+ ┃   ┗ 📂icofont
  ┣ 📜about.html
- ┣ 📜category.html
  ┣ 📜index.html
- ┗ 📜README.md
+ ┣ 📜list_stream.html
+ ┣ 📜README.md
+ ┗ 📜stream.html
 ```
 
 ## 🧱 Features
@@ -44,6 +45,7 @@ Folder Structure:
 
 - [Khoeru Roziqin](https://github.com/roziqinkhoeru)
 - [Rafli Ferdian Ramadhan](https://github.com/RafliFerdian25)
+- [Dico Aji Prasetyo](https://github.com/DicoAji)
 
 ## 📱 Contact and Social Media
 
