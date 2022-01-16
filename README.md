@@ -18,7 +18,9 @@ Folder Structure:
  ┃ ┃ ┣ 📜owl.theme.default.min.css
  ┃ ┃ ┗ 📜styles.css
  ┃ ┣ 📂img
- ┃ ┃ ┗ 📜
+ ┃ ┃ ┗ 📂club
+ ┃ ┃ ┗ 📂liga
+ ┃ ┃ ┗ 📜...
  ┃ ┣ 📂js
  ┃ ┃ ┣ 📜owl.carousel.min.js
  ┃ ┃ ┗ 📜scripts.js

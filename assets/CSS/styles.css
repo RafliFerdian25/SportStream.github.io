@@ -82,7 +82,7 @@ h3 {
   font-size: 2.25rem;
   font-weight: 700;
 
-  margin-bottom: 18px !important;
+  margin-bottom: 18px;
 }
 
 h4 {
@@ -813,6 +813,121 @@ footer p {
   display: block !important;
 }
 
+/**************************************/
+/*               STREAM               */
+/**************************************/
+/* header skor */
+.blok-stream {
+  padding: 0 var(--m-max) 0;
+  margin-top: 10rem;
+}
+.ls__stream {
+  height: 18.75rem;
+  position: relative;
+  box-shadow: 0 0 1.5rem 2px rgba(0, 0, 0, .2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.5rem;
+}
+.ls__stream::after {
+  content: "";
+  background: url(../images/liga/premier-league.png);
+  opacity: .09;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ls__stream .row {
+  width: 100%;
+}
+.title__club {
+  font-size: 2.25rem;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.logo__club {
+  height: 6.25rem;
+  margin-bottom: .675rem;
+}
+.skor__head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.right__head__club {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 4rem;
+}
+.left__head__club {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  padding-right: 4rem;
+}
+/* play video */
+.blok-play {
+  padding: var(--m-min) 3rem;
+}
+.blok-play .container-fluid {
+  max-width: 90rem;
+}
+.play__video {
+  height: 35rem;
+}
+.link__play__stream:hover i {
+  transform: scale(1.2);
+}
+.play__video i {
+  font-size: 4rem;
+  color: var(--white);
+  transition: var(--global-trans);
+}
+.add__slot {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+/* info terbaru */
+.info__terbaru__content {
+  padding: 4.5rem 4rem;
+}
+.info__link {
+  padding: 0 2rem;
+  transition: var(--global-trans);
+}
+.info__link:hover {
+  transform: scale(.9);
+}
+.info__link i {
+  font-size: 4.5rem;
+  margin-bottom: .75rem;
+  color: var(--white);
+  transition: var(--global-trans);
+}
+.info__link:hover i {
+  color: rgba(255, 255, 255, 0.6);
+}
+.info__link p {
+  margin-bottom: 0;
+}
+.social__media{
+  flex-wrap: wrap;
+  padding: 0 !important;
+}
+
 /*******************************************/
 /*               RESPONSIVES               */
 /*******************************************/
@@ -848,6 +963,10 @@ footer p {
 
   h2 {
     font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
   }
 
   /* Navbar */
@@ -964,6 +1083,44 @@ footer p {
   }
   .match__club img {
     height: 2.25rem;
+  }
+
+  /**************************************/
+  /*               STREAM               */
+  /**************************************/
+  /* header skor */
+  .ls__stream {
+    height: 17rem;
+  }
+  .title__club {
+    font-size: 1.5rem;
+  }
+  .logo__club {
+    height: 4rem;
+  }
+  /* play video */
+  .blok-play {
+    padding: var(--m-min) 1.125rem;
+  }
+  .play__video {
+    height: 26.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .add__slot {
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+  }
+  /* info terbaru */
+  .info__terbaru__content {
+    padding: 3rem;
+  }
+  .info__terbaru__content h2 {
+    text-align: center;
+    margin-bottom: 2.25rem;
+  }
+  .info__link i {
+    font-size: 3.75rem;
   }
 }
 
@@ -1209,112 +1366,63 @@ footer p {
   .list__liga__image {
     align-self: center;
   }
-}
 
-/**************************************/
-/*               STREAM               */
-/**************************************/
-
-.stream .time {
-  margin-top: 70px;
-}
-.play {
-  padding-bottom: 5rem;
-  padding-top: 5rem;
-}
-
-.play_video {
-  height: 523px;
-}
-.play_video i {
-  font-size: 80px;
-  color: var(--white);
-}
-.play_video a:hover {
-  transform: scale(1.1);
-  transition: var(--global-trans);
-}
-.add_slot {
-  box-shadow: 1px 1px 20px 2px #888888;
-}
-.info_terbaru {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-.info_terbaru .row {
-  padding: 3rem;
-}
-
-.info_terbaru a:hover {
-  transform: scale(1.07);
-
-  color: rgba(255, 255, 255, 0.6);
-}
-.stream .stream_headers {
-  background-image: url("assets/images/liga/epl-bg-2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-}
-
-/* min */
-@media (min-width: 768px) {
-  .stream .header_skor {
-    /* ubah ke phone */
-    margin-top: 130px;
-    padding: 80px;
+  /**************************************/
+  /*               STREAM               */
+  /**************************************/
+  /* header skor */
+  .ls__stream {
+    height: 12rem;
   }
-  .logo_club {
-    height: 100px;
+  .ls__stream .row {
+    flex-wrap: wrap;
   }
-
-  .info_terbaru a {
-    font-size: 18px;
+  .title__club {
+    font-size: 1.125rem;
   }
-  .info_terbaru i {
-    font-size: 50px;
+  .logo__club {
+    height: 2.25rem;
+    margin-bottom: .375rem;
   }
-  .info_terbaru li {
-    margin: 0 10px;
+  .right__head__club {
+    padding-left: 1.5rem;
   }
-}
-/* max */
-@media (max-width: 426px) {
-  .stream .header_skor {
-    /* ubah ke phone */
-    margin-top: 100px;
-    padding-bottom: 20px;
+  .left__head__club {
+    padding-right: 1.5rem;
   }
-  .logo_club {
-    height: 60px;
+  .skor__head h3 {
+    font-size: 1.25rem;
   }
-  .header_skor {
-    padding-top: 1rem;
+  .skor__head p {
+    font-size: .875rem;
   }
-
-  .info_terbaru li {
-    font-size: 13px;
-    padding: 0 5px;
+  /* play video */
+  .blok-play {
+    padding: var(--m-min) 0;
   }
-}
-@media (max-width: 375px) {
-  .stream h5 {
-    font-size: 10px;
+  .play__video {
+    margin-bottom: .875rem;
+    height: 16rem;
   }
-}
-@media (max-width: 768px) {
-  .info_terbaru a {
-    font-size: 18px;
+  .play__video i {
+    font-size: 3rem;
   }
-  .info_terbaru i {
-    font-size: 35px;
+  /* info terbaru */
+  .info__terbaru__content {
+    padding: 2.25rem;
   }
-  .info_terbaru .social_media {
-    margin-top: 3rem;
+  .info__terbaru__content h2 {
+    margin-bottom: 1.875rem;
   }
-  .add_slot .dummy__content {
-    padding: 3rem 0;
+  .info__link {
+    padding: 0 .75rem;
+    margin-bottom: .75rem;
+  }
+  .info__link i {
+    font-size: 2.25rem;
+    margin-bottom: .375rem;
+  }
+  .info__link p {
+    font-size: .75rem;
   }
 }
