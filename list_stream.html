@@ -84,11 +84,12 @@
 
             <!-- list__content -->
             <div>
-                <!-- list liga card -->
+<!-- ==============jika pertandingan selesai tambahkan class match__success, atur pada javascripts============== -->
+                <!-- premier league -->
                 <div class="list__liga card">
                     <!-- image liga -->
                     <div class="list__liga__image">
-                        <img src="assets/images/premier-league.png" alt="liga-logo">
+                        <img src="assets/images/liga/premier-league.png" alt="liga-logo">
                     </div>
                     <!-- end image liga -->
                     
@@ -101,21 +102,25 @@
                                 <a href="#">
                                     <span class="match__row row justify-content-center">
                                         <div class="match__kiri col-5 d-flex justify-content-end p-0">
-                                            <div class="match__nama__club align-self-center text-end">Manchester United</div>
+                                            <div class="match__nama__club align-self-center text-end">Man United</div>
                                             <div class="match__club">
-                                                <img src="assets/images/club/munited.png" alt="">
+                                                <img src="assets/images/club/premier-league/munited.png" alt="munited">
                                             </div>
                                         </div>
                                         <div class="stream__match__score text-center col-2">
-                                            <div class="stream__match__livescore" class="d-none"></div>
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club"></span>
+                                                <span> - </span>
+                                                <span id="right__club"></span>
+                                            </div>
                                             <div class="stream__match__score__v">v</div>
                                             <div class="stream__match__score__waktu">23:00</div>
                                         </div>
                                         <div class="match__kanan col-5 d-flex p-0">
                                             <div class="match__club text-start">
-                                                <img src="assets/images/club/mcity.png" alt="">
+                                                <img src="assets/images/club/premier-league/mcity.png" alt="mcity">
                                             </div>
-                                            <div class="match__nama__club align-self-center">Manchester City</div>
+                                            <div class="match__nama__club align-self-center">Man City</div>
                                         </div>
                                     </span>
                                 </a>
@@ -124,257 +129,50 @@
                                 <a href="#">
                                     <span class="match__row row justify-content-center">
                                         <div class="match__kiri col-5 d-flex justify-content-end p-0">
-                                            <div class="match__nama__club align-self-center text-end">Manchester United</div>
+                                            <div class="match__nama__club align-self-center text-end">Arsenal</div>
                                             <div class="match__club">
-                                                <img src="assets/images/club/munited.png" alt="">
+                                                <img src="assets/images/club/premier-league/arsenal.png" alt="Arsenal">
                                             </div>
                                         </div>
                                         <div class="stream__match__score text-center col-2">
-                                            <div class="stream__match__livescore" class="d-none"></div>
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club"></span>
+                                                <span> - </span>
+                                                <span id="right__club"></span>
+                                            </div>
                                             <div class="stream__match__score__v">v</div>
-                                            <div class="stream__match__score__waktu">23:00</div>
+                                            <div class="stream__match__score__waktu">20:00</div>
                                         </div>
                                         <div class="match__kanan col-5 d-flex p-0">
                                             <div class="match__club text-start">
-                                                <img src="assets/images/club/mcity.png" alt="">
+                                                <img src="assets/images/club/premier-league/liverpool.png" alt="Liverpool">
                                             </div>
-                                            <div class="match__nama__club align-self-center">Manchester City</div>
+                                            <div class="match__nama__club align-self-center">Liverpool</div>
                                         </div>
                                     </span>
                                 </a>
                             </li>
-                            <li class="match">
+                            <li class="match match__success">
                                 <a href="#">
                                     <span class="match__row row justify-content-center">
                                         <div class="match__kiri col-5 d-flex justify-content-end p-0">
-                                            <div class="match__nama__club align-self-center text-end">Manchester United</div>
+                                            <div class="match__nama__club align-self-center text-end">Tottenham</div>
                                             <div class="match__club">
-                                                <img src="assets/images/club/munited.png" alt="">
+                                                <img src="assets/images/club/premier-league/tottenham.png" alt="Tottenham">
                                             </div>
                                         </div>
                                         <div class="stream__match__score text-center col-2">
-                                            <div class="stream__match__livescore" class="d-none"></div>
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club">2</span>
+                                                <span> - </span>
+                                                <span id="right__club">3</span>
+                                            </div>
                                             <div class="stream__match__score__v">v</div>
-                                            <div class="stream__match__score__waktu">23:00</div>
+                                            <div class="stream__match__score__waktu">18:00</div>
                                         </div>
                                         <div class="match__kanan col-5 d-flex p-0">
                                             <div class="match__club text-start">
-                                                <img src="assets/images/club/mcity.png" alt="">
-                                            </div>
-                                            <div class="match__nama__club align-self-center">Manchester City</div>
-                                        </div>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- end list liga card -->
-
-                <!-- list liga card -->
-                <div class="list__liga card">
-                    <!-- image liga -->
-                    <div class="list__liga__image">
-                        <img src="assets/images/laliga.png" alt="liga-logo">
-                    </div>
-                    <!-- end image liga -->
-                    
-                    <!-- list liga content -->
-                    <div class="list__liga__content card-body">
-                        <!-- list match -->
-                        <ul class="p-0">
-                            <!-- match -->
-                            <li class="match">
-                                <a href="#">
-                                    <span class="match__row row justify-content-center">
-                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
-                                            <div class="match__nama__club align-self-center text-end">Real Madrid</div>
-                                            <div class="match__club">
-                                                <img src="assets/images/club/madrid.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="stream__match__score text-center col-2">
-                                            <div class="stream__match__livescore" class="d-none"></div>
-                                            <div class="stream__match__score__v">v</div>
-                                            <div class="stream__match__score__waktu">23:00</div>
-                                        </div>
-                                        <div class="match__kanan col-5 d-flex p-0">
-                                            <div class="match__club text-start">
-                                                <img src="assets/images/club/barcelona.png" alt="">
-                                            </div>
-                                            <div class="match__nama__club align-self-center">Barcelona</div>
-                                        </div>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="match">
-                                <a href="#">
-                                    <span class="match__row row justify-content-center">
-                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
-                                            <div class="match__nama__club align-self-center text-end">Real Madrid</div>
-                                            <div class="match__club">
-                                                <img src="assets/images/club/madrid.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="stream__match__score text-center col-2">
-                                            <div class="stream__match__livescore" class="d-none"></div>
-                                            <div class="stream__match__score__v">v</div>
-                                            <div class="stream__match__score__waktu">23:00</div>
-                                        </div>
-                                        <div class="match__kanan col-5 d-flex p-0">
-                                            <div class="match__club text-start">
-                                                <img src="assets/images/club/barcelona.png" alt="">
-                                            </div>
-                                            <div class="match__nama__club align-self-center">Barcelona</div>
-                                        </div>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="match">
-                                <a href="#">
-                                    <span class="match__row row justify-content-center">
-                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
-                                            <div class="match__nama__club align-self-center text-end">Real Madrid</div>
-                                            <div class="match__club">
-                                                <img src="assets/images/club/madrid.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="stream__match__score text-center col-2">
-                                            <div class="stream__match__livescore" class="d-none"></div>
-                                            <div class="stream__match__score__v">v</div>
-                                            <div class="stream__match__score__waktu">23:00</div>
-                                        </div>
-                                        <div class="match__kanan col-5 d-flex p-0">
-                                            <div class="match__club text-start">
-                                                <img src="assets/images/club/barcelona.png" alt="">
-                                            </div>
-                                            <div class="match__nama__club align-self-center">Barcelona</div>
-                                        </div>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- end list liga card -->
-
-                <!-- list liga card -->
-                <div class="list__liga card">
-                    <!-- image liga -->
-                    <div class="list__liga__image">
-                        <img src="assets/images/bri-liga1.png" alt="liga-logo">
-                    </div>
-                    <!-- end image liga -->
-
-                    <!-- list liga content -->
-                    <div class="list__liga__content card-body">
-                        <!-- list match -->
-                        <ul class="p-0">
-                            <!-- match -->
-                            <li class="match">
-                                <a href="#">
-                                    <span class="match__row row justify-content-center">
-                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
-                                            <div class="match__nama__club align-self-center text-end">Bayangkara FC</div>
-                                            <div class="match__club">
-                                                <img src="assets/images/club/bayangkara.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="stream__match__score text-center col-2">
-                                            <div class="stream__match__livescore" class="d-none"></div>
-                                            <div class="stream__match__score__v">v</div>
-                                            <div class="stream__match__score__waktu">23:00</div>
-                                        </div>
-                                        <div class="match__kanan col-5 d-flex p-0">
-                                            <div class="match__club text-start">
-                                                <img src="assets/images/club/persebaya.png" alt="">
-                                            </div>
-                                            <div class="match__nama__club align-self-center">Persebaya</div>
-                                        </div>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="match">
-                                <a href="#">
-                                    <span class="match__row row justify-content-center">
-                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
-                                            <div class="match__nama__club align-self-center text-end">Bayangkara FC</div>
-                                            <div class="match__club">
-                                                <img src="assets/images/club/bayangkara.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="stream__match__score text-center col-2">
-                                            <div class="stream__match__livescore" class="d-none"></div>
-                                            <div class="stream__match__score__v">v</div>
-                                            <div class="stream__match__score__waktu">23:00</div>
-                                        </div>
-                                        <div class="match__kanan col-5 d-flex p-0">
-                                            <div class="match__club text-start">
-                                                <img src="assets/images/club/persebaya.png" alt="">
-                                            </div>
-                                            <div class="match__nama__club align-self-center">Persebaya</div>
-                                        </div>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="match">
-                                <a href="#">
-                                    <span class="match__row row justify-content-center">
-                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
-                                            <div class="match__nama__club align-self-center text-end">Bayangkara FC</div>
-                                            <div class="match__club">
-                                                <img src="assets/images/club/bayangkara.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="stream__match__score text-center col-2">
-                                            <div class="stream__match__livescore" class="d-none"></div>
-                                            <div class="stream__match__score__v">v</div>
-                                            <div class="stream__match__score__waktu">23:00</div>
-                                        </div>
-                                        <div class="match__kanan col-5 d-flex p-0">
-                                            <div class="match__club text-start">
-                                                <img src="assets/images/club/persebaya.png" alt="">
-                                            </div>
-                                            <div class="match__nama__club align-self-center">Persebaya</div>
-                                        </div>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- end list liga card -->
-
-                <!-- list liga card -->
-                <div class="list__liga card">
-                    <!-- image liga -->
-                    <div class="list__liga__image">
-                        <img src="assets/images/champion-leauge.png" alt="liga-logo">
-                    </div>
-                    <!-- end image liga -->
-
-                    <!-- list liga content -->
-                    <div class="list__liga__content card-body">
-                        <!-- list match -->
-                        <ul class="p-0">
-                            <!-- match -->
-                            <li class="match">
-                                <a href="#">
-                                    <span class="match__row row justify-content-center">
-                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
-                                            <div class="match__nama__club align-self-center text-end">Paris Saint Germain</div>
-                                            <div class="match__club">
-                                                <img src="assets/images/club/psg.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="stream__match__score text-center col-2">
-                                            <div class="stream__match__livescore" class="d-none"></div>
-                                            <div class="stream__match__score__v">v</div>
-                                            <div class="stream__match__score__waktu">23:00</div>
-                                        </div>
-                                        <div class="match__kanan col-5 d-flex p-0">
-                                            <div class="match__club text-start">
-                                                <img src="assets/images/club/chelsea.png" alt="">
+                                                <img src="assets/images/club/premier-league/chelsea.png" alt="chelsea">
                                             </div>
                                             <div class="match__nama__club align-self-center">Chelsea</div>
                                         </div>
@@ -384,7 +182,646 @@
                         </ul>
                     </div>
                 </div>
-                <!-- end list liga card -->
+                <!-- end premier league -->
+
+                <!-- la liga -->
+                <div class="list__liga card">
+                    <!-- image liga -->
+                    <div class="list__liga__image">
+                        <img src="assets/images/liga/laliga.png" alt="liga-logo">
+                    </div>
+                    <!-- end image liga -->
+                    
+                    <!-- list liga content -->
+                    <div class="list__liga__content card-body">
+                        <!-- list match -->
+                        <ul class="p-0">
+                            <!-- match -->
+                            <li class="match">
+                                <a href="#">
+                                    <span class="match__row row justify-content-center">
+                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
+                                            <div class="match__nama__club align-self-center text-end">Barcelona</div>
+                                            <div class="match__club">
+                                                <img src="assets/images/club/laliga/barcelona.png" alt="Barcelona">
+                                            </div>
+                                        </div>
+                                        <div class="stream__match__score text-center col-2">
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club"></span>
+                                                <span> - </span>
+                                                <span id="right__club"></span>
+                                            </div>
+                                            <div class="stream__match__score__v">v</div>
+                                            <div class="stream__match__score__waktu">23:00</div>
+                                        </div>
+                                        <div class="match__kanan col-5 d-flex p-0">
+                                            <div class="match__club text-start">
+                                                <img src="assets/images/club/laliga/madrid.png" alt="madrid">
+                                            </div>
+                                            <div class="match__nama__club align-self-center">Real Madrid</div>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="match match__success">
+                                <a href="#">
+                                    <span class="match__row row justify-content-center">
+                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
+                                            <div class="match__nama__club align-self-center text-end">Real Madrid</div>
+                                            <div class="match__club">
+                                                <img src="assets/images/club/laliga/madrid.png" alt="madrid">
+                                            </div>
+                                        </div>
+                                        <div class="stream__match__score text-center col-2">
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club">2</span>
+                                                <span> - </span>
+                                                <span id="right__club">0</span>
+                                            </div>
+                                            <div class="stream__match__score__v">v</div>
+                                            <div class="stream__match__score__waktu">20:00</div>
+                                        </div>
+                                        <div class="match__kanan col-5 d-flex p-0">
+                                            <div class="match__club text-start">
+                                                <img src="assets/images/club/laliga/atleticomadrid.png" alt="atleticomadrid">
+                                            </div>
+                                            <div class="match__nama__club align-self-center">Atletico Madrid</div>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="match match__success">
+                                <a href="#">
+                                    <span class="match__row row justify-content-center">
+                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
+                                            <div class="match__nama__club align-self-center text-end">Atletico Madrid</div>
+                                            <div class="match__club">
+                                                <img src="assets/images/club/laliga/atleticomadrid.png" alt="atleticomadrid">
+                                            </div>
+                                        </div>
+                                        <div class="stream__match__score text-center col-2">
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club">3</span>
+                                                <span> - </span>
+                                                <span id="right__club">1</span>
+                                            </div>
+                                            <div class="stream__match__score__v">v</div>
+                                            <div class="stream__match__score__waktu">23:00</div>
+                                        </div>
+                                        <div class="match__kanan col-5 d-flex p-0">
+                                            <div class="match__club text-start">
+                                                <img src="assets/images/club/laliga/barcelona.png" alt="barcelona">
+                                            </div>
+                                            <div class="match__nama__club align-self-center">Barcelona</div>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end laliga -->
+
+                <!-- serie a -->
+                <div class="list__liga card">
+                    <!-- image liga -->
+                    <div class="list__liga__image">
+                        <img src="assets/images/liga/serie-a.png" alt="liga-logo">
+                    </div>
+                    <!-- end image liga -->
+                    
+                    <!-- list liga content -->
+                    <div class="list__liga__content card-body">
+                        <!-- list match -->
+                        <ul class="p-0">
+                            <!-- match -->
+                            <li class="match">
+                                <a href="#">
+                                    <span class="match__row row justify-content-center">
+                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
+                                            <div class="match__nama__club align-self-center text-end">Juventus</div>
+                                            <div class="match__club">
+                                                <img src="assets/images/club/seriea/juventus.png" alt="juventus">
+                                            </div>
+                                        </div>
+                                        <div class="stream__match__score text-center col-2">
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club"></span>
+                                                <span> - </span>
+                                                <span id="right__club"></span>
+                                            </div>
+                                            <div class="stream__match__score__v">v</div>
+                                            <div class="stream__match__score__waktu">21:00</div>
+                                        </div>
+                                        <div class="match__kanan col-5 d-flex p-0">
+                                            <div class="match__club text-start">
+                                                <img src="assets/images/club/seriea/roma.png" alt="roma">
+                                            </div>
+                                            <div class="match__nama__club align-self-center">AS Roma</div>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="match">
+                                <a href="#">
+                                    <span class="match__row row justify-content-center">
+                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
+                                            <div class="match__nama__club align-self-center text-end">AS Roma</div>
+                                            <div class="match__club">
+                                                <img src="assets/images/club/seriea/roma.png" alt="roma">
+                                            </div>
+                                        </div>
+                                        <div class="stream__match__score text-center col-2">
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club"></span>
+                                                <span> - </span>
+                                                <span id="right__club"></span>
+                                            </div>
+                                            <div class="stream__match__score__v">v</div>
+                                            <div class="stream__match__score__waktu">18:00</div>
+                                        </div>
+                                        <div class="match__kanan col-5 d-flex p-0">
+                                            <div class="match__club text-start">
+                                                <img src="assets/images/club/seriea/napoli.png" alt="napoli">
+                                            </div>
+                                            <div class="match__nama__club align-self-center">Napoli</div>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="match match__success">
+                                <a href="#">
+                                    <span class="match__row row justify-content-center">
+                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
+                                            <div class="match__nama__club align-self-center text-end">Napoli</div>
+                                            <div class="match__club">
+                                                <img src="assets/images/club/seriea/napoli.png" alt="napoli">
+                                            </div>
+                                        </div>
+                                        <div class="stream__match__score text-center col-2">
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club">1</span>
+                                                <span> - </span>
+                                                <span id="right__club">0</span>
+                                            </div>
+                                            <div class="stream__match__score__v">v</div>
+                                            <div class="stream__match__score__waktu">16:00</div>
+                                        </div>
+                                        <div class="match__kanan col-5 d-flex p-0">
+                                            <div class="match__club text-start">
+                                                <img src="assets/images/club/seriea/juventus.png" alt="juventus">
+                                            </div>
+                                            <div class="match__nama__club align-self-center">Juventus</div>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end serie a -->
+
+                <!-- bundesliga -->
+                <div class="list__liga card">
+                    <!-- image liga -->
+                    <div class="list__liga__image">
+                        <img src="assets/images/liga/bundesliga.png" alt="liga-logo">
+                    </div>
+                    <!-- end image liga -->
+                    
+                    <!-- list liga content -->
+                    <div class="list__liga__content card-body">
+                        <!-- list match -->
+                        <ul class="p-0">
+                            <!-- match -->
+                            <li class="match match__success">
+                                <a href="#">
+                                    <span class="match__row row justify-content-center">
+                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
+                                            <div class="match__nama__club align-self-center text-end">Bayern Munchen</div>
+                                            <div class="match__club">
+                                                <img src="assets/images/club/bundesliga/bayern.png" alt="bayern">
+                                            </div>
+                                        </div>
+                                        <div class="stream__match__score text-center col-2">
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club">4</span>
+                                                <span> - </span>
+                                                <span id="right__club">1</span>
+                                            </div>
+                                            <div class="stream__match__score__v">v</div>
+                                            <div class="stream__match__score__waktu">23:00</div>
+                                        </div>
+                                        <div class="match__kanan col-5 d-flex p-0">
+                                            <div class="match__club text-start">
+                                                <img src="assets/images/club/bundesliga/schalke.png" alt="schalke">
+                                            </div>
+                                            <div class="match__nama__club align-self-center">Schalke 04</div>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="match match__success">
+                                <a href="#">
+                                    <span class="match__row row justify-content-center">
+                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
+                                            <div class="match__nama__club align-self-center text-end">Dortmund</div>
+                                            <div class="match__club">
+                                                <img src="assets/images/club/bundesliga/dortmund.png" alt="dortmund">
+                                            </div>
+                                        </div>
+                                        <div class="stream__match__score text-center col-2">
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club">2</span>
+                                                <span> - </span>
+                                                <span id="right__club">2</span>
+                                            </div>
+                                            <div class="stream__match__score__v">v</div>
+                                            <div class="stream__match__score__waktu">18:00</div>
+                                        </div>
+                                        <div class="match__kanan col-5 d-flex p-0">
+                                            <div class="match__club text-start">
+                                                <img src="assets/images/club/bundesliga/bayern.png" alt="bayern">
+                                            </div>
+                                            <div class="match__nama__club align-self-center">Bayern Munchen</div>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="match match__success">
+                                <a href="#">
+                                    <span class="match__row row justify-content-center">
+                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
+                                            <div class="match__nama__club align-self-center text-end">Schalke 04</div>
+                                            <div class="match__club">
+                                                <img src="assets/images/club/bundesliga/schalke.png" alt="schalke">
+                                            </div>
+                                        </div>
+                                        <div class="stream__match__score text-center col-2">
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club">2</span>
+                                                <span> - </span>
+                                                <span id="right__club">3</span>
+                                            </div>
+                                            <div class="stream__match__score__v">v</div>
+                                            <div class="stream__match__score__waktu">16:00</div>
+                                        </div>
+                                        <div class="match__kanan col-5 d-flex p-0">
+                                            <div class="match__club text-start">
+                                                <img src="assets/images/club/bundesliga/dortmund.png" alt="dortmund">
+                                            </div>
+                                            <div class="match__nama__club align-self-center">Dortmund</div>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end bundesliga -->
+
+                <!-- ligue 1 -->
+                <div class="list__liga card">
+                    <!-- image liga -->
+                    <div class="list__liga__image">
+                        <img src="assets/images/liga/ligue1.png" alt="liga-logo">
+                    </div>
+                    <!-- end image liga -->
+                    
+                    <!-- list liga content -->
+                    <div class="list__liga__content card-body">
+                        <!-- list match -->
+                        <ul class="p-0">
+                            <!-- match -->
+                            <li class="match">
+                                <a href="#">
+                                    <span class="match__row row justify-content-center">
+                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
+                                            <div class="match__nama__club align-self-center text-end">AS Monaco</div>
+                                            <div class="match__club">
+                                                <img src="assets/images/club/ligue1/monaco.png" alt="monaco">
+                                            </div>
+                                        </div>
+                                        <div class="stream__match__score text-center col-2">
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club"></span>
+                                                <span> - </span>
+                                                <span id="right__club"></span>
+                                            </div>
+                                            <div class="stream__match__score__v">v</div>
+                                            <div class="stream__match__score__waktu">23:00</div>
+                                        </div>
+                                        <div class="match__kanan col-5 d-flex p-0">
+                                            <div class="match__club text-start">
+                                                <img src="assets/images/club/ligue1/lyons.png" alt="lyon">
+                                            </div>
+                                            <div class="match__nama__club align-self-center">Lyon</div>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="match">
+                                <a href="#">
+                                    <span class="match__row row justify-content-center">
+                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
+                                            <div class="match__nama__club align-self-center text-end">PSG</div>
+                                            <div class="match__club">
+                                                <img src="assets/images/club/ligue1/psg.png" alt="psg">
+                                            </div>
+                                        </div>
+                                        <div class="stream__match__score text-center col-2">
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club"></span>
+                                                <span> - </span>
+                                                <span id="right__club"></span>
+                                            </div>
+                                            <div class="stream__match__score__v">v</div>
+                                            <div class="stream__match__score__waktu">21:00</div>
+                                        </div>
+                                        <div class="match__kanan col-5 d-flex p-0">
+                                            <div class="match__club text-start">
+                                                <img src="assets/images/club/ligue1/monaco.png" alt="monaco">
+                                            </div>
+                                            <div class="match__nama__club align-self-center">AS Monaco</div>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="match">
+                                <a href="#">
+                                    <span class="match__row row justify-content-center">
+                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
+                                            <div class="match__nama__club align-self-center text-end">Lyon</div>
+                                            <div class="match__club">
+                                                <img src="assets/images/club/ligue1/lyons.png" alt="lyon">
+                                            </div>
+                                        </div>
+                                        <div class="stream__match__score text-center col-2">
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club"></span>
+                                                <span> - </span>
+                                                <span id="right__club"></span>
+                                            </div>
+                                            <div class="stream__match__score__v">v</div>
+                                            <div class="stream__match__score__waktu">16:00</div>
+                                        </div>
+                                        <div class="match__kanan col-5 d-flex p-0">
+                                            <div class="match__club text-start">
+                                                <img src="assets/images/club/ligue1/psg.png" alt="psg">
+                                            </div>
+                                            <div class="match__nama__club align-self-center">PSG</div>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end ligue 1 -->
+
+                <!-- bri liga 1 -->
+                <div class="list__liga card">
+                    <!-- image liga -->
+                    <div class="list__liga__image">
+                        <img src="assets/images/liga/bri-liga1.png" alt="liga-logo">
+                    </div>
+                    <!-- end image liga -->
+                    
+                    <!-- list liga content -->
+                    <div class="list__liga__content card-body">
+                        <!-- list match -->
+                        <ul class="p-0">
+                            <!-- match -->
+                            <li class="match">
+                                <a href="#">
+                                    <span class="match__row row justify-content-center">
+                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
+                                            <div class="match__nama__club align-self-center text-end">Persija Jakarta</div>
+                                            <div class="match__club">
+                                                <img src="assets/images/club/briliga1/persija.png" alt="persija">
+                                            </div>
+                                        </div>
+                                        <div class="stream__match__score text-center col-2">
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club"></span>
+                                                <span> - </span>
+                                                <span id="right__club"></span>
+                                            </div>
+                                            <div class="stream__match__score__v">v</div>
+                                            <div class="stream__match__score__waktu">20:00</div>
+                                        </div>
+                                        <div class="match__kanan col-5 d-flex p-0">
+                                            <div class="match__club text-start">
+                                                <img src="assets/images/club/briliga1/bayangkara.png" alt="Bhayangkara">
+                                            </div>
+                                            <div class="match__nama__club align-self-center">Bhayangkara FC</div>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="match match__success">
+                                <a href="#">
+                                    <span class="match__row row justify-content-center">
+                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
+                                            <div class="match__nama__club align-self-center text-end">Bhayangkara FC</div>
+                                            <div class="match__club">
+                                                <img src="assets/images/club/briliga1/bayangkara.png" alt="bayangkara">
+                                            </div>
+                                        </div>
+                                        <div class="stream__match__score text-center col-2">
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club">2</span>
+                                                <span> - </span>
+                                                <span id="right__club">0</span>
+                                            </div>
+                                            <div class="stream__match__score__v">v</div>
+                                            <div class="stream__match__score__waktu">18:00</div>
+                                        </div>
+                                        <div class="match__kanan col-5 d-flex p-0">
+                                            <div class="match__club text-start">
+                                                <img src="assets/images/club/briliga1/persebaya.png" alt="Persebaya">
+                                            </div>
+                                            <div class="match__nama__club align-self-center">Persebaya</div>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="match match__success">
+                                <a href="#">
+                                    <span class="match__row row justify-content-center">
+                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
+                                            <div class="match__nama__club align-self-center text-end">Persebaya</div>
+                                            <div class="match__club">
+                                                <img src="assets/images/club/briliga1/persebaya.png" alt="persebaya">
+                                            </div>
+                                        </div>
+                                        <div class="stream__match__score text-center col-2">
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club">0</span>
+                                                <span> - </span>
+                                                <span id="right__club">0</span>
+                                            </div>
+                                            <div class="stream__match__score__v">v</div>
+                                            <div class="stream__match__score__waktu">16:00</div>
+                                        </div>
+                                        <div class="match__kanan col-5 d-flex p-0">
+                                            <div class="match__club text-start">
+                                                <img src="assets/images/club/briliga1/persija.png" alt="persija">
+                                            </div>
+                                            <div class="match__nama__club align-self-center">Persija Jakarta</div>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end bri liga 1 -->
+
+                <!-- UCL -->
+                <div class="list__liga card">
+                    <!-- image liga -->
+                    <div class="list__liga__image">
+                        <img src="assets/images/liga/champion-leauge.png" alt="liga-logo">
+                    </div>
+                    <!-- end image liga -->
+                    
+                    <!-- list liga content -->
+                    <div class="list__liga__content card-body">
+                        <!-- list match -->
+                        <ul class="p-0">
+                            <!-- match -->
+                            <li class="match">
+                                <a href="#">
+                                    <span class="match__row row justify-content-center">
+                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
+                                            <div class="match__nama__club align-self-center text-end">Man United</div>
+                                            <div class="match__club">
+                                                <img src="assets/images/club/premier-league/munited.png" alt="munited">
+                                            </div>
+                                        </div>
+                                        <div class="stream__match__score text-center col-2">
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club"></span>
+                                                <span> - </span>
+                                                <span id="right__club"></span>
+                                            </div>
+                                            <div class="stream__match__score__v">v</div>
+                                            <div class="stream__match__score__waktu">03:00</div>
+                                        </div>
+                                        <div class="match__kanan col-5 d-flex p-0">
+                                            <div class="match__club text-start">
+                                                <img src="assets/images/club/laliga/atleticomadrid.png" alt="atleticomadrid">
+                                            </div>
+                                            <div class="match__nama__club align-self-center">Atletico Madrid</div>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="match">
+                                <a href="#">
+                                    <span class="match__row row justify-content-center">
+                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
+                                            <div class="match__nama__club align-self-center text-end">Real Madrid</div>
+                                            <div class="match__club">
+                                                <img src="assets/images/club/laliga/madrid.png" alt="madrid">
+                                            </div>
+                                        </div>
+                                        <div class="stream__match__score text-center col-2">
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club"></span>
+                                                <span> - </span>
+                                                <span id="right__club"></span>
+                                            </div>
+                                            <div class="stream__match__score__v">v</div>
+                                            <div class="stream__match__score__waktu">03:00</div>
+                                        </div>
+                                        <div class="match__kanan col-5 d-flex p-0">
+                                            <div class="match__club text-start">
+                                                <img src="assets/images/club/ligue1/psg.png" alt="psg">
+                                            </div>
+                                            <div class="match__nama__club align-self-center">PSG</div>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end UCL -->
+
+                <!-- Europa League -->
+                <div class="list__liga card">
+                    <!-- image liga -->
+                    <div class="list__liga__image">
+                        <img src="assets/images/liga/europa-leagure.png" alt="liga-logo">
+                    </div>
+                    <!-- end image liga -->
+                    
+                    <!-- list liga content -->
+                    <div class="list__liga__content card-body">
+                        <!-- list match -->
+                        <ul class="p-0">
+                            <!-- match -->
+                            <li class="match">
+                                <a href="#">
+                                    <span class="match__row row justify-content-center">
+                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
+                                            <div class="match__nama__club align-self-center text-end">Barcelona</div>
+                                            <div class="match__club">
+                                                <img src="assets/images/club/laliga/barcelona.png" alt="barcelona">
+                                            </div>
+                                        </div>
+                                        <div class="stream__match__score text-center col-2">
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club"></span>
+                                                <span> - </span>
+                                                <span id="right__club"></span>
+                                            </div>
+                                            <div class="stream__match__score__v">v</div>
+                                            <div class="stream__match__score__waktu">00:45</div>
+                                        </div>
+                                        <div class="match__kanan col-5 d-flex p-0">
+                                            <div class="match__club text-start">
+                                                <img src="assets/images/club/seriea/napoli.png" alt="napoli">
+                                            </div>
+                                            <div class="match__nama__club align-self-center">Napoli</div>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="match">
+                                <a href="#">
+                                    <span class="match__row row justify-content-center">
+                                        <div class="match__kiri col-5 d-flex justify-content-end p-0">
+                                            <div class="match__nama__club align-self-center text-end">Leipzig</div>
+                                            <div class="match__club">
+                                                <img src="assets/images/club/bundesliga/leipzig.png" alt="leipzig">
+                                            </div>
+                                        </div>
+                                        <div class="stream__match__score text-center col-2">
+                                            <div class="stream__match__livescore">
+                                                <span id="left__club"></span>
+                                                <span> - </span>
+                                                <span id="right__club"></span>
+                                            </div>
+                                            <div class="stream__match__score__v">v</div>
+                                            <div class="stream__match__score__waktu">03:00</div>
+                                        </div>
+                                        <div class="match__kanan col-5 d-flex p-0">
+                                            <div class="match__club text-start">
+                                                <img src="assets/images/club/laliga/sociedad.png" alt="sociedad">
+                                            </div>
+                                            <div class="match__nama__club align-self-center">Real Sociedad</div>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end Europa League -->
             </div>
             <!-- end list content -->
         </div>
@@ -405,7 +842,7 @@
     
                         <!-- footer desc -->
                         <div class="footer__deskripsi">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius facilisis sed velit ante fermentum quam.</p>
+                            <p>Platform streaming sepak bola mudah, cepat, dan gratis. Tersedia berbagai liga dan piala lokal maupun internasional.</p>
                         </div>
                     </div> <!-- end left footer -->
                     
@@ -456,7 +893,7 @@
     
                 <!-- bottom footer -->
                 <div class="bottom__footer text-center pb-4">
-                    <p class="mb-0">&copy; 2022 | Family Football. All right reserved</p>
+                    <p class="mb-0">&copy; 2022 | SoccerPlay Tv. All right reserved</p>
                 </div> <!-- end bottom footer -->
             </div> <!-- end container -->
         </div> <!-- end blok x -->

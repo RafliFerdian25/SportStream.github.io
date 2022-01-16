@@ -5,6 +5,7 @@
 /* 2. Saat membuat section gunakan class blok-full atau blok-x untuk membuat
 jarak atas dan bawah (padding) */
 /* 3. lihat juga class-class yang dapat digunakan kembali agar tidak terjadi penumpukkan style */
+/* 4. jika pertandingan selesai tambahkan class match__success disamping class match */
 
 /*******************************************/
 /*               GOOGLE FONT               */
@@ -566,6 +567,8 @@ footer p {
 
   width: auto !important;
   height: 3.75rem;
+  padding: .5rem;
+  background-color: var(--white);
 }
 
 .player__tumbnail {
@@ -688,6 +691,16 @@ footer p {
   margin-bottom: 1.5rem;
 }
 
+.link__ts a {
+  font-weight: 600;
+  text-decoration: underline;
+  color: var(--white);
+}
+
+.link__ts a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 /* tonton section */
 .tonton__section {
   display: block;
@@ -744,7 +757,7 @@ footer p {
   height: 4rem;
 }
 .match {
-  padding: 1.125rem 0;
+  padding: 1.125rem 1rem;
   transition: var(--global-trans);
 }
 .match__row {
@@ -780,14 +793,25 @@ footer p {
 .match__club img {
   height: 2.625rem;
 }
-.list__liga__content li:hover {
+.match:hover {
   background-color: rgba(0, 0, 0, 0.09) !important;
   border-radius: 9px;
 }
 .list__content .card {
   position: static;
 }
-
+/* display score */
+/* jika pertandingan selesai tambahkan class match__success */
+.match .stream__match__livescore {
+  display: none;
+}
+.match.match__success .stream__match__score__v,
+.match.match__success .stream__match__score__waktu {
+  display: none !important;
+}
+.match.match__success .stream__match__livescore {
+  display: block !important;
+}
 
 /*******************************************/
 /*               RESPONSIVES               */
@@ -930,12 +954,16 @@ footer p {
   /*********************************************/
   .list__liga {
     margin: 0 0 3.375rem;
+    padding: 1.875rem;
   }
   .match__kiri .match__nama__club {
     padding-right: 1rem;
   }
   .match__kanan .match__nama__club {
     padding-left: 1rem;
+  }
+  .match__club img {
+    height: 2.25rem;
   }
 }
 
@@ -1099,7 +1127,8 @@ footer p {
   }
 
   .ll__video {
-    height: 2.25rem;
+    height: 2.75rem;
+    padding: .375rem;
   }
 
   /* test */
@@ -1154,13 +1183,16 @@ footer p {
   }
   .list__liga {
     margin: 0 0 2.25rem;
-    padding: 1.5rem;
+    padding: 1.5rem .75rem .25rem;
   }
   .list__liga__image img {
-    height: 3.5rem;
+    height: 3rem;
+  }
+  .match {
+    padding: 1rem .75rem;
   }
   .match__club img {
-    height: 2rem;
+    height: 1.75rem;
   }
   .match__nama__club,
   .stream__match__livescore,
