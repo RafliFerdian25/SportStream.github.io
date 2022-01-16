@@ -817,6 +817,19 @@ footer p {
 /*               STREAM               */
 /**************************************/
 /* header skor */
+.live__skor {
+  margin-bottom: 1rem;
+}
+.live__skor p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-right: .5rem;
+}
+.live__skor i {
+  color: rgba(232, 18, 36, 1);
+  font-size: .75rem;
+  transform: translateY(2px);
+}
 .blok-stream {
   padding: 0 var(--m-max) 0;
   margin-top: 10rem;
@@ -1089,6 +1102,13 @@ footer p {
   /*               STREAM               */
   /**************************************/
   /* header skor */
+  .live__skor p {
+    font-size: 1.1rem;
+  }
+  .live__skor i {
+    font-size: .65rem;
+    transform: translateY(1px);
+  }
   .ls__stream {
     height: 17rem;
   }
@@ -1371,6 +1391,13 @@ footer p {
   /*               STREAM               */
   /**************************************/
   /* header skor */
+  .live__skor {
+    margin-bottom: .5rem;
+  }
+  .live__skor p {
+    font-size: .875rem;
+    margin-right: .5rem;
+  }
   .ls__stream {
     height: 12rem;
   }
