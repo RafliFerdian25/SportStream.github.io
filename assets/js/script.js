@@ -4,6 +4,8 @@ $(document).ready(function () {
     $("#nav__home").addClass("active");
   } else if (document.title == "SoccerPlay Tv | About") {
     $("#nav__about").addClass("active");
+  } else if (document.title == "SoccerPlay Tv | News") {
+    $("#nav__news").addClass("active");
   }
 });
 $("#nav__category").hover(

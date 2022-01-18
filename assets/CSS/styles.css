@@ -125,13 +125,7 @@ h6 {
 /*    Navbar     */
 /*****************/
 .nav__logo {
-  display: flex;
-
-  align-items: center;
-}
-
-.nav__logo span {
-  font-weight: 800;
+  height: 1.75rem;
 }
 
 .navbar-brand i {
@@ -230,12 +224,17 @@ footer p {
 }
 
 .footer__title__logo {
-  margin-bottom: 1.875rem;
+  margin-bottom: 1.375rem;
 }
 
-.footer__title__logo h4,
-.footer__title__logo i {
-  color: var(--white);
+.footer__title__logo a {
+  display: flex;
+  align-items: center;
+  max-width: 15rem;
+}
+
+.footer__title__logo img {
+  height: 2.25rem;
 }
 
 .footer__deskripsi {
@@ -996,10 +995,6 @@ footer p {
   }
 
   /* footer */
-  .footer__title__logo {
-    margin-bottom: 1.5rem;
-  }
-
   .left__footer {
     margin-bottom: 1.875rem;
   }
@@ -1190,7 +1185,12 @@ footer p {
     padding: 0 0.75rem;
   }
 
-  .footer__title__logo h4 {
+  .footer__title__logo a {
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .footer__title__logo img {
     text-align: center;
   }
 
