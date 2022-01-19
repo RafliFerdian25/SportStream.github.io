@@ -940,6 +940,52 @@ footer p {
   padding: 0 !important;
 }
 
+/************************************/
+/*               NEWS               */
+/************************************/
+.blok__head__news {
+  padding-top: 11.25rem;
+  padding-bottom: 4.5rem;
+}
+.news__category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  margin-bottom: 3rem;
+}
+.news__category ul {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.news__category ul li {
+  margin: 0 .75rem;
+}
+.link__category {
+  color: rgba(0, 0, 0, .7);
+  font-weight: 600;
+  padding: .75rem 1rem;
+  transition: var(--global-trans);
+  display: block;
+  text-align: center;
+}
+.link__category:hover {
+  color: var(--black);
+}
+.link__category.active {
+  background-color: var(--black);
+  color: var(--white);
+  transition: var(--global-trans);
+}
+.link__category.active:hover {
+  background-color: var(--black);
+  color: var(--white);
+  background-color: rgba(0, 0, 0, .9);
+}
+
 /*******************************************/
 /*               RESPONSIVES               */
 /*******************************************/
@@ -1137,6 +1183,10 @@ footer p {
   .info__link i {
     font-size: 3.75rem;
   }
+
+  /************************************/
+  /*               NEWS               */
+  /************************************/
 }
 
 /*=============== phone view ===============*/
@@ -1451,5 +1501,13 @@ footer p {
   }
   .info__link p {
     font-size: .75rem;
+  }
+
+  /************************************/
+  /*               NEWS               */
+  /************************************/
+  .blok__head__news {
+    padding-top: 8.5rem;
+    padding-bottom: 4rem;
   }
 }
