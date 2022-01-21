@@ -48,233 +48,234 @@ jarak atas dan bawah (padding) */
 /*               GENERAL STYLE               */
 /*********************************************/
 * {
-  font-family: var(--body-font);
-  font-weight: 400;
+    font-family: var(--body-font);
+    font-weight: 400;
 
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 
-  color: black;
+    color: black;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 h1 {
-  font-family: var(--head-font);
-  font-size: 4rem;
-  font-weight: 700;
+    font-family: var(--head-font);
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 h2 {
-  font-family: var(--head-font);
-  font-size: 3rem;
-  font-weight: 700;
+    font-family: var(--head-font);
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 h3 {
-  font-size: 2.25rem;
-  font-weight: 700;
+    font-size: 2.25rem;
+    font-weight: 700;
 
-  margin-bottom: 18px;
+    margin-bottom: 18px;
 }
 
 h4 {
-  font-size: 1.875rem;
-  font-weight: 700;
+    font-size: 1.875rem;
+    font-weight: 700;
 }
 
 h5 {
-  font-size: 18px;
-  font-weight: 700;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 h6 {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .blok-full {
-  padding: var(--m-min) var(--m-max);
+    padding: var(--m-min) var(--m-max);
 }
 
 .blok-x {
-  padding: var(--mx-max);
+    padding: var(--mx-max);
 }
 
 .bg__img {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .bg__dark {
-  background-color: var(--black);
+    background-color: var(--black);
 }
 
 .bg__sl {
-  background-color: var(--scnd-light);
+    background-color: var(--scnd-light);
 }
 
 /*****************/
 /*    Navbar     */
 /*****************/
 .nav__logo {
-  height: 1.75rem;
+    height: 1.75rem;
 }
 
 .navbar-brand i {
-  font-size: 1.875rem;
+    font-size: 1.875rem;
 }
 
 .vl {
-  height: 1.875rem;
-  margin: 0 2rem 0 3rem;
+    height: 1.875rem;
+    margin: 0 2rem 0 3rem;
 
-  border-left: 1.5px solid rgba(0, 0, 0, 0.3);
+    border-left: 1.5px solid rgba(0, 0, 0, .3);
 }
 
 .nav__margin {
-  margin: 0 8px !important;
+    margin: 0 8px !important;
 }
 
 .navbar {
-  font-size: 14px !important;
+    font-size: 14px !important;
 }
 
 .nav-link {
-  color: black !important;
+    color: black !important;
 }
 
 .nav-link.active {
-  color: white !important;
-  border-radius: var(--sm-rad);
-  background-color: black !important;
+    color: white !important;
+    border-radius: var(--sm-rad);
+    background-color: black !important;
 }
 
 .form__search .form-control {
-  border-radius: var(--sm-rad);
+    border-radius: var(--sm-rad);
 }
 
 .navbar .btn-outline-success {
-  color: white !important;
-  border-color: black !important;
-  border-radius: var(--sm-rad);
-  background-color: black !important;
+    color: white !important;
+    border-color: black !important;
+    border-radius: var(--sm-rad);
+    background-color: black !important;
 }
 
 #navbar {
-  position: fixed;
-  top: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
 
-  width: 100%;
+    width: 100%;
 
-  transition: top 0.3s;
+    transition: top .3s;
 
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-
-  background-color: white;
-  z-index: 999;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    background-color: white;
 }
 
 .nav-item .nav-link,
 .nav-item .nav-link span {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .dropdown:hover .dropdown-menu {
-  display: block;
+    display: block;
 }
 
 .footer__title {
-  display: none;
+    display: none;
 }
 
 .navbar__toggler {
-  border: none;
+    border: none;
 }
 
 .navbar__toggler .navbar-toggler-icon {
-  display: flex;
+    display: flex;
 
-  background: none;
+    background: none;
 
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 /*****************/
 /*    Footer     */
 /*****************/
 footer {
-  background-color: var(--black);
+    background-color: var(--black);
 }
 
 footer p {
-  color: var(--white);
+    color: var(--white);
 }
 
 .footer__content {
-  padding: 6.25rem 0;
+    padding: 6.25rem 0;
 }
 
 .footer__title__logo {
-  margin-bottom: 1.375rem;
+    margin-bottom: 1.375rem;
 }
 
 .footer__title__logo a {
-  display: flex;
-  align-items: center;
-  max-width: 15rem;
+    display: flex;
+
+    max-width: 15rem;
+
+    align-items: center;
 }
 
 .footer__title__logo img {
-  height: 2.25rem;
+    height: 2.25rem;
 }
 
 .footer__deskripsi {
-  line-height: 2;
+    line-height: 2;
 
-  max-width: 24rem;
+    max-width: 24rem;
 }
 
 .right__footer {
-  justify-content: end;
+    justify-content: end;
 }
 
 .footer__sosmed {
-  margin-bottom: 2.25rem;
+    margin-bottom: 2.25rem;
 }
 
 .footer__sosmed li {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 
-  margin-right: 1.875rem;
+    margin-right: 1.875rem;
 }
 
 .footer__sosmed li:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .footer__sosmed li a i {
-  transition: var(--global-trans);
+    transition: var(--global-trans);
 
-  color: var(--white);
+    color: var(--white);
 }
 
 .footer__sosmed li a:hover i {
-  color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, .6);
 }
 
 .quick__links ul li,
 .nama__liga1 ul li,
 .nama__liga2 ul li {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .quick__links ul li a i,
@@ -283,33 +284,33 @@ footer p {
 .nama__liga1 ul li a i,
 .nama__liga2 ul li a span,
 .nama__liga2 ul li a i {
-  font-weight: 500;
+    font-weight: 500;
 
-  transition: var(--global-trans);
+    transition: var(--global-trans);
 
-  color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, .7);
 }
 
 .quick__links ul li a:hover span,
 .nama__liga1 ul li a:hover span,
 .nama__liga2 ul li a:hover span {
-  color: var(--white);
+    color: var(--white);
 }
 
 .quick__links ul li a:hover i,
 .nama__liga1 ul li a:hover i,
 .nama__liga2 ul li a:hover i {
-  transform: translate(3px, -3px);
+    transform: translate(3px, -3px);
 
-  color: var(--white);
+    color: var(--white);
 }
 
 .fl__head {
-  font-weight: 700;
+    font-weight: 700;
 
-  display: none;
+    display: none;
 
-  color: var(--white);
+    color: var(--white);
 }
 
 /*************************/
@@ -317,870 +318,1057 @@ footer p {
 /*************************/
 .gabung__content,
 .gabung__content2 {
-  margin: 0 0.75rem;
-  padding: 4rem;
+    margin: 0 .75rem;
+    padding: 4rem;
 
-  background-color: var(--black);
+    background-color: var(--black);
 }
 
 .gabung__content h2 {
-  max-width: 37.5rem;
-  margin-bottom: 2.25rem;
+    max-width: 37.5rem;
+    margin-bottom: 2.25rem;
 
-  -webkit-hyphens: auto;
-  hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 
-  color: white;
+    color: white;
 
-  -ms-hyphens: auto;
+    -ms-hyphens: auto;
 }
 
 .join__tele {
-  display: flex;
+    display: flex;
 }
 
 .btn__tele {
-  display: flex;
+    display: flex;
 
-  padding: 0.75rem 1.5rem;
+    padding: .75rem 1.5rem;
 
-  transition: var(--global-trans);
+    transition: var(--global-trans);
 
-  border: 1.5px solid var(--white);
-  background-color: var(--black);
+    border: 1.5px solid var(--white);
+    background-color: var(--black);
 
-  align-items: center;
+    align-items: center;
 }
 
 .btn__tele i {
-  font-size: 1.25rem;
+    font-size: 1.25rem;
 
-  color: var(--white);
+    color: var(--white);
 }
 
 .btn__tele span {
-  font-weight: 600;
+    font-weight: 600;
 
-  transition: var(--global-trans);
-  -webkit-hyphens: auto;
-  hyphens: auto;
+    transition: var(--global-trans);
+    -webkit-hyphens: auto;
+    hyphens: auto;
 
-  color: var(--white);
+    color: var(--white);
 
-  -ms-hyphens: auto;
+    -ms-hyphens: auto;
 }
 
 .btn__tele:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, .1);
 }
 
 /* gabung content 2 */
 .gabung__content2 {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-  align-items: center;
+    align-items: center;
 }
 
 .gabung__content2 h2 {
-  margin-bottom: 2.25rem;
+    margin-bottom: 2.25rem;
 
-  text-align: center;
+    text-align: center;
 
-  color: white;
+    color: white;
 }
 
 /*******************/
 /*    drop ads     */
 /*******************/
 .drop__ads {
-  width: 100%;
-  height: 22.5rem;
+    width: 100%;
+    height: 22.5rem;
 }
 
 .dummy__content {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .dummy__content p {
-  font-size: 1.5rem;
-  font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
+
 
 /**************************************/
 /*               INDEX                */
 /**************************************/
 /* jumbotron */
 .jumbotron__section {
-  max-width: 92rem;
-  margin: auto;
+    max-width: 92rem;
+    margin: auto;
 }
 
 .left__jumbotron {
-  min-height: 48.75rem;
-  padding-top: 14.75rem;
+    min-height: 48.75rem;
+    padding-top: 14.75rem;
 }
 
 .left__jumbotron h1 {
-  margin-bottom: 2.25rem;
+    margin-bottom: 2.25rem;
 }
 
 .left__jumbotron h6 {
-  line-height: 1.7;
+    line-height: 1.7;
 
-  max-width: 29.75rem;
-  margin-bottom: 1.875rem;
+    max-width: 29.75rem;
+    margin-bottom: 1.875rem;
 }
 
 .right__jumbotron,
 .right__jumbotron .bg__img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 
-  background-color: var(--black);
+    background-color: var(--black);
 }
 
 .stream__now {
-  display: flex;
+    display: flex;
 
-  margin-bottom: 5.375rem;
+    margin-bottom: 5.375rem;
 }
 
 .btn__stream {
-  display: flex;
+    display: flex;
 
-  padding: 1.125rem 2.25rem;
+    padding: 1.125rem 2.25rem;
 
-  transition: var(--global-trans);
+    transition: var(--global-trans);
 
-  background-color: var(--black);
+    background-color: var(--black);
 
-  align-items: center;
+    align-items: center;
 }
 
 .btn__stream i {
-  font-size: 1.25rem;
+    font-size: 1.25rem;
 
-  margin-right: 0.625rem;
+    margin-right: .625rem;
 
-  transition: var(--global-trans);
+    transition: var(--global-trans);
 
-  color: var(--white);
+    color: var(--white);
 }
 
 .btn__stream span {
-  font-size: 1.125rem;
-  font-weight: 500;
+    font-size: 1.125rem;
+    font-weight: 500;
 
-  transition: var(--global-trans);
+    transition: var(--global-trans);
 
-  color: var(--white);
+    color: var(--white);
 }
 
 .btn__stream:hover {
-  background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, .9);
 }
 
 .liga__list {
-  display: flex;
+    display: flex;
 
-  align-items: center;
-  flex-wrap: wrap;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .link__logo {
-  display: block;
+    display: block;
 
-  margin-right: 2.25rem;
-  margin-bottom: 2.25rem;
+    margin-right: 2.25rem;
+    margin-bottom: 2.25rem;
 }
 
 .link__logo:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .ll__tt {
-  height: 1.875rem;
+    height: 1.875rem;
 }
 
 /* stream choose */
 .blok-full.stream__choose {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .stream__choose .row h2 {
-  margin-bottom: 2.25rem;
+    margin-bottom: 2.25rem;
 }
 
 .stream__choose .row p {
-  max-width: 20rem;
+    max-width: 20rem;
 }
 
 #list__video {
-  padding-left: 6rem;
+    padding-left: 6rem;
 }
 
 .item__vid {
-  padding: 4.5rem 5vw 0 4.5vw;
+    padding: 4.5rem 5vw 0 4.5vw;
 }
 
 .video__play .bg__img {
-  position: relative;
+    position: relative;
 
-  width: 43vw;
-  max-width: 38.75rem;
-  height: 15.75rem;
+    width: 43vw;
+    max-width: 38.75rem;
+    height: 15.75rem;
 }
 
 .box__video {
-  display: flex;
+    display: flex;
 
-  width: 43vw;
-  max-width: 38.75rem;
-  height: 15.75rem;
+    width: 43vw;
+    max-width: 38.75rem;
+    height: 15.75rem;
 
-  background-color: rgba(255, 255, 255, 0.18);
+    background-color: rgba(255, 255, 255, .18);
 
-  backdrop-filter: blur(1rem);
-  align-items: center;
-  justify-content: center;
+    backdrop-filter: blur(1rem);
+    align-items: center;
+    justify-content: center;
 }
 
 .box__video i {
-  font-size: 3.375rem;
+    font-size: 3.375rem;
 
-  transition: var(--global-trans);
+    transition: var(--global-trans);
 }
 
 .box__video:hover i {
-  transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 .ll__video {
-  position: absolute;
-  z-index: 100;
-  top: 1.5rem;
-  right: 1.75rem;
+    position: absolute;
+    z-index: 100;
+    top: 1.5rem;
+    right: 1.75rem;
 
-  width: auto !important;
-  height: 3.75rem;
-  padding: .5rem;
-  background-color: var(--white);
+    width: auto !important;
+    height: 3.75rem;
+    padding: .5rem;
+
+    background-color: var(--white);
 }
 
 .player__tumbnail {
-  position: absolute;
-  z-index: 99;
-  bottom: 0;
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
 
-  width: auto !important;
+    width: auto !important;
 }
 
 .left__sc {
-  display: flex;
+    display: flex;
 
-  height: 100%;
+    height: 100%;
 
-  align-items: center;
+    align-items: center;
 }
 
 .stream__choose .owl-nav {
-  display: flex;
+    display: flex;
 
-  align-items: center;
-  justify-content: end;
+    align-items: center;
+    justify-content: end;
 }
 
 .stream__choose .owl-nav button {
-  margin-top: 0.5rem !important;
+    margin-top: .5rem !important;
 }
 
 .stream__choose .owl-nav button:hover {
-  background-color: transparent !important;
+    background-color: transparent !important;
 }
 
 .stream__choose .owl-nav .owl-prev {
-  margin-right: 1.125rem;
+    margin-right: 1.125rem;
 }
 
 .stream__choose .owl-nav .owl-prev i,
 .stream__choose .owl-nav .owl-next i {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 
-  transition: var(--global-trans);
+    transition: var(--global-trans);
 
-  color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, .7);
 }
 
 .stream__choose .owl-nav .owl-prev i:hover,
 .stream__choose .owl-nav .owl-next i:hover {
-  color: var(--white);
+    color: var(--white);
 }
 
 /* testi */
 .right__testi h2 {
-  margin-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 
 .testi__point {
-  padding-left: 0;
+    padding-left: 0;
 }
 
 .testi__point li {
-  display: flex;
+    display: flex;
 
-  margin-bottom: 2.25rem;
+    margin-bottom: 2.25rem;
 
-  align-items: center;
+    align-items: center;
 }
 
 .testi__point li:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .testi__point li img {
-  height: 2.125rem;
-  margin-right: 1.125rem;
+    height: 2.125rem;
+    margin-right: 1.125rem;
 }
 
 .left__testi {
-  display: flex;
+    display: flex;
 
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 
-  align-items: center;
+    align-items: center;
 }
 
 .left__testi .bg__img {
-  width: 31rem;
-  height: 86%;
+    width: 31rem;
+    height: 86%;
 }
+
 
 /**************************************/
 /*               ABOUT                */
 /**************************************/
 .apaitu__image__content {
-  height: 35rem;
+    height: 35rem;
 }
 
 .apaitu__desc {
-  display: flex;
+    display: flex;
 
-  height: 35rem;
-  padding: 0;
+    height: 35rem;
+    padding: 0;
 
-  align-items: center;
+    align-items: center;
 }
 
 .apaitu__desc__content {
-  padding: 5.375rem 4rem;
+    padding: 5.375rem 4rem;
 
-  background-color: black;
+    background-color: black;
 }
 
 .apaitu__desc__content h2,
 .apaitu__desc__content p {
-  color: white;
+    color: white;
 }
 
 .apaitu__desc__content h2 {
-  margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .link__ts a {
-  font-weight: 600;
-  text-decoration: underline;
-  color: var(--white);
+    font-weight: 600;
+
+    text-decoration: underline;
+
+    color: var(--white);
 }
 
 .link__ts a:hover {
-  color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, .7);
 }
 
 /* tonton section */
 .tonton__section {
-  display: block;
+    display: block;
 
-  padding: 4.5rem 0;
+    padding: 4.5rem 0;
 
-  transition: var(--global-trans);
+    transition: var(--global-trans);
 
-  border-radius: 1rem;
+    border-radius: 1rem;
 }
 
 .tonton__section:hover {
-  background-color: var(--black);
+    background-color: var(--black);
 }
 
 .tonton__section i,
 .tonton__section h4 {
-  transition: var(--global-trans);
+    transition: var(--global-trans);
 }
 
 .tonton__section:hover h4 {
-  color: var(--white);
+    color: var(--white);
 }
 
 .tonton__section:hover i {
-  transform: scale(1.2);
+    transform: scale(1.2);
 
-  color: var(--white);
+    color: var(--white);
 }
 
 .tonton__btn {
-  font-size: 4.5rem;
+    font-size: 4.5rem;
 }
 
 .tonton__desc h4 {
-  font-weight: 800;
+    font-weight: 800;
 }
+
 
 /*********************************************/
 /*               LIST STREAM                 */
 /*********************************************/
 .list__title {
-  padding-top: var(--m-max);
-  margin-bottom: 4rem;
+    margin-bottom: 4rem;
+    padding-top: var(--m-max);
 }
+
 .list__liga {
-  margin: 0 0 4.5rem;
-  padding: 2.25rem;
+    margin: 0 0 4.5rem;
+    padding: 2.25rem;
 }
+
 .list__liga__image {
-  padding: 0 0 1.875rem;
+    padding: 0 0 1.875rem;
 }
+
 .list__liga__image img {
-  height: 4rem;
+    height: 4rem;
 }
+
 .match {
-  padding: 1.125rem 1rem;
-  transition: var(--global-trans);
+    padding: 1.125rem 1rem;
+
+    transition: var(--global-trans);
 }
+
 .match__row {
-  align-items: center;
-  width: 100%;
-  margin: 0;
+    width: 100%;
+    margin: 0;
+
+    align-items: center;
 }
+
 .list__liga__content.card-body {
-  padding: 0 !important;
+    padding: 0 !important;
 }
+
 .stream__match__score {
-  padding: 0;
+    padding: 0;
 }
+
 .match__nama__club {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-  font-weight: 600;
+    font-weight: 600;
+
+    overflow: hidden;
+
+    width: 100%;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
+
 .match__kiri {
-  padding-right: 1rem !important;
+    padding-right: 1rem !important;
 }
+
 .match__kanan {
-  padding-left: 1rem !important;
+    padding-left: 1rem !important;
 }
+
 .match__kiri .match__nama__club {
-  padding-right: 1.5rem;
+    padding-right: 1.5rem;
 }
+
 .match__kanan .match__nama__club {
-  padding-left: 1.5rem;
+    padding-left: 1.5rem;
 }
+
 .match__club img {
-  height: 2.625rem;
+    height: 2.625rem;
 }
+
 .match:hover {
-  background-color: rgba(0, 0, 0, 0.09) !important;
-  border-radius: 9px;
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, .09) !important;
 }
+
 .list__content .card {
-  position: static;
+    position: static;
 }
+
 /* display score */
 /* jika pertandingan selesai tambahkan class match__success */
 .match .stream__match__livescore {
-  display: none;
+    display: none;
 }
+
 .match.match__success .stream__match__score__v,
 .match.match__success .stream__match__score__waktu {
-  display: none !important;
+    display: none !important;
 }
+
 .match.match__success .stream__match__livescore {
-  display: block !important;
+    display: block !important;
 }
+
 
 /**************************************/
 /*               STREAM               */
 /**************************************/
 /* header skor */
 .live__skor {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
+
 .live__skor p {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-right: .5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+
+    margin-right: .5rem;
 }
+
 .live__skor i {
-  color: rgba(232, 18, 36, 1);
-  font-size: .75rem;
-  transform: translateY(2px);
+    font-size: .75rem;
+
+    transform: translateY(2px);
+
+    color: rgba(232, 18, 36, 1);
 }
+
 .blok-stream {
-  padding: 0 var(--m-max) 0;
-  margin-top: 10rem;
+    margin-top: 10rem;
+    padding: 0 var(--m-max) 0;
 }
+
 .ls__stream {
-  height: 18.75rem;
-  position: relative;
-  box-shadow: 0 0 1.5rem 2px rgba(0, 0, 0, .2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 1.5rem;
+    position: relative;
+
+    display: flex;
+
+    width: 100%;
+    height: 18.75rem;
+    padding: 1.5rem;
+
+    box-shadow: 0 0 1.5rem 2px rgba(0, 0, 0, .2);
+
+    align-items: center;
+    justify-content: center;
 }
+
 .ls__stream::after {
-  content: "";
-  background: url(../images/liga/premier-league.png);
-  opacity: .09;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+
+    opacity: .09;
+    background: url(../images/liga/premier-league.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
 .ls__stream .row {
-  width: 100%;
+    width: 100%;
 }
+
 .title__club {
-  font-size: 2.25rem;
-  margin-bottom: 0;
-  font-weight: 600;
+    font-size: 2.25rem;
+    font-weight: 600;
+
+    margin-bottom: 0;
 }
+
 .logo__club {
-  height: 6.25rem;
-  margin-bottom: .675rem;
+    height: 6.25rem;
+    margin-bottom: .675rem;
 }
+
 .skor__head {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
 }
+
 .right__head__club {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 4rem;
+
+    justify-content: center;
+    align-items: flex-start;
 }
+
 .left__head__club {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-direction: column;
-  padding-right: 4rem;
+    display: flex;
+    flex-direction: column;
+
+    padding-right: 4rem;
+
+    justify-content: center;
+    align-items: flex-end;
 }
+
 /* play video */
 .blok-play {
-  padding: var(--m-min) 3rem;
+    padding: var(--m-min) 3rem;
 }
+
 .blok-play .container-fluid {
-  max-width: 90rem;
+    max-width: 90rem;
 }
+
 .play__video {
-  height: 35rem;
+    height: 35rem;
 }
+
 .link__play__stream:hover i {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
+
 .play__video i {
-  font-size: 4rem;
-  color: var(--white);
-  transition: var(--global-trans);
+    font-size: 4rem;
+
+    transition: var(--global-trans);
+
+    color: var(--white);
 }
+
 .add__slot {
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
 }
+
 /* info terbaru */
 .info__terbaru__content {
-  padding: 4.5rem 4rem;
+    padding: 4.5rem 4rem;
 }
+
 .info__link {
-  padding: 0 2rem;
-  transition: var(--global-trans);
+    padding: 0 2rem;
+
+    transition: var(--global-trans);
 }
+
 .info__link:hover {
-  transform: scale(.9);
+    transform: scale(.9);
 }
+
 .info__link i {
-  font-size: 4.5rem;
-  margin-bottom: .75rem;
-  color: var(--white);
-  transition: var(--global-trans);
+    font-size: 4.5rem;
+
+    margin-bottom: .75rem;
+
+    transition: var(--global-trans);
+
+    color: var(--white);
 }
+
 .info__link:hover i {
-  color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, .6);
 }
+
 .info__link p {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
-.social__media{
-  flex-wrap: wrap;
-  padding: 0 !important;
+
+.social__media {
+    padding: 0 !important;
+
+    flex-wrap: wrap;
 }
+
 
 /************************************/
 /*               NEWS               */
 /************************************/
 .blok__head__news {
-  padding-top: 11.25rem;
-  padding-bottom: 4.5rem;
-}
-.news__container {
-  max-width: 77.5rem;
-  margin: 0 auto;
-}
-.news__category {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem 5.625rem;
-  margin-bottom: 3rem;
-}
-.news__category ul {
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-}
-.news__category ul li {
-  margin: 0 .5rem;
-}
-.link__category {
-  color: rgba(0, 0, 0, .7);
-  font-weight: 600;
-  padding: .5rem 1rem;
-  transition: var(--global-trans);
-  display: block;
-  text-align: center;
-}
-.link__category:hover {
-  color: var(--black);
-}
-.link__category.active {
-  background-color: var(--black);
-  color: var(--white);
-  transition: var(--global-trans);
-}
-.link__category.active:hover {
-  background-color: var(--black);
-  color: var(--white);
-  background-color: rgba(0, 0, 0, .9);
-}
-#unlist__category {
-  position: relative;
-}
-#unlist__category .owl-nav {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-#unlist__category .owl-nav .owl-prev {
-  display: block;
-  position: absolute;
-  left: -3rem;
-  top: -.5rem;
-}
-#unlist__category .owl-nav .owl-next {
-  display: block;
-  position: absolute;
-  right: -3rem;
-  top: -.5rem;
-}
-/* news content */
-.nc__container {
-  margin-bottom: var(--m-min);
-}
-.left__nc {
-  padding: 1.25rem;
-  display: grid;
-  gap: 2rem 1.125rem;
-  grid-template-columns: 1fr 1fr;
-  flex-wrap: wrap;
-}
-.card__news {
-  width: 100%;
-}
-.card__news:hover .img__news img {
-  transform: scale(1.1);
-}
-.img__news {
-  width: 100%;
-  height: 13.09rem;
-  background-color: rgba(196, 196, 196, 1);
-  overflow: hidden;
-}
-.img__news img {
-  width: 100%;
-  transition: var(--global-trans);
-}
-.badge__news {
-  margin: 1rem 0 .75rem;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.badge__category {
-  font-size: .75rem;
-  padding: .375rem .5rem;
-  margin-right: .5rem;
-  font-weight: 500;
-}
-/* badge category */
-.c-trending {
-  background-color: rgba(226, 28, 28, 1);
-  color: var(--white);
-}
-.c-lokal {
-  background-color: rgba(32, 72, 215, 1);
-  color: var(--white);
-}
-.c-internasional {
-  background-color: rgba(13, 158, 18, 1);
-  color: var(--white);
-}
-.c-transfer {
-  background-color: rgba(255, 211, 0, 1);
-  color: var(--black);
-  font-weight: 700;
-}
-.title__news {
-  font-size: 1.25rem;
-  font-weight: 700;
-  display: block;
-  color: var(--black);
-  margin-bottom: 1rem;
-  transition: var(--global-trans);
-}
-.title__news:hover {
-  color: rgba(0, 0, 0, .8);
-}
-.info__news {
-  display: flex;
-  align-items: center;
-}
-.date__news,
-.author__news {
-  margin-bottom: 0;
-  font-size: .75rem;
-  font-weight: 700;
-  color: rgba(0, 0, 0, .7);
-  margin-right: .5rem;
-}
-.info__news i {
-  font-size: .375rem;
-  color: rgba(0, 0, 0, .7);
-  margin-right: .5rem;
-}
-.btn__news {
-  padding: 2.5rem 0 2rem;
-}
-.btn__nother {
-  padding: 1.125rem 2.25rem;
-  background-color: var(--black);
-  color: var(--white);
-  transition: var(--global-trans);
-  font-weight: 500;
-}
-.btn__nother:hover {
-  background-color: rgba(0, 0, 0, .9);
-  color: var(--white);
-}
-/* ads news */
-.ads__news__xl {
-  width: 100%; 
-  height: 25rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1.875rem;
-}
-.ads__news__l {
-  width: 100%;
-  height: 12.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1.875rem;
-}
-/* berita terbaru */
-.new__news {
-  margin-bottom: 1.875rem;
-}
-.headnew__news {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: .75rem;
-  background-color: var(--black);
-}
-.contentnew__news {
-  padding: .75rem .75rem 1.25rem;
-}
-.nn__card {
-  display: flex;
-  margin-bottom: .75rem;
-}
-.nn__card:hover .nn__left img {
-  transform: scale(1.1);
-}
-.nn__left {
-  flex: 50%;
-  height: 6.45625rem;
-  overflow: hidden;
-}
-.nn__left img {
-  width: 100%;
-  transition: var(--global-trans);
-}
-.nn__right {
-  margin-left: .625rem;
-  flex: 50%;
-  padding: .25rem 0;
-}
-.nn__date {
-  font-size: .75rem;
-  margin-bottom: .375rem;
-}
-.nn__title {
-  font-weight: 600;
-  margin-bottom: 0;
-  display: block;
-  color: var(--black);
-  transition: var(--global-trans);
-}
-.nn__title:hover {
-  color: rgba(0, 0, 0, .8);
+    padding-top: 11.25rem;
+    padding-bottom: 4.5rem;
 }
 
+.news__container {
+    max-width: 77.5rem;
+    margin: 0 auto;
+}
+
+.news__category {
+    display: flex;
+
+    margin-bottom: 3rem;
+    padding: 1.5rem 5.625rem;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.news__category ul {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.news__category ul li {
+    margin: 0 .5rem;
+}
+
+.link__category {
+    font-weight: 600;
+
+    display: block;
+
+    padding: .5rem 1rem;
+
+    transition: var(--global-trans);
+    text-align: center;
+
+    color: rgba(0, 0, 0, .7);
+}
+
+.link__category:hover {
+    color: var(--black);
+}
+
+.link__category.active {
+    transition: var(--global-trans);
+
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.link__category.active:hover {
+    color: var(--white);
+    background-color: var(--black);
+    background-color: rgba(0, 0, 0, .9);
+}
+
+#unlist__category {
+    position: relative;
+}
+
+#unlist__category .owl-nav {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+}
+
+#unlist__category .owl-nav .owl-prev {
+    position: absolute;
+    top: -.5rem;
+    left: -3rem;
+
+    display: block;
+}
+
+#unlist__category .owl-nav .owl-next {
+    position: absolute;
+    top: -.5rem;
+    right: -3rem;
+
+    display: block;
+}
+
+/* news content */
+.nc__container {
+    margin-bottom: var(--m-min);
+}
+
+.left__nc {
+    display: grid;
+
+    padding: 1.25rem;
+
+    gap: 2rem 1.125rem;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+}
+
+.card__news {
+    width: 100%;
+}
+
+.img__news {
+    width: 100%;
+
+    background-color: rgba(196, 196, 196, 1);
+}
+
+.img__news img {
+    width: 100%;
+
+    transition: var(--global-trans);
+}
+
+.badge__news {
+    display: flex;
+
+    margin: 1rem 0 .75rem;
+
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.badge__category {
+    font-size: .75rem;
+    font-weight: 500;
+
+    margin-right: .5rem;
+    padding: .375rem .5rem;
+}
+
+/* badge category */
+.c-trending {
+    color: var(--white);
+    background-color: rgba(226, 28, 28, 1);
+}
+
+.c-lokal {
+    color: var(--white);
+    background-color: rgba(32, 72, 215, 1);
+}
+
+.c-internasional {
+    color: var(--white);
+    background-color: rgba(13, 158, 18, 1);
+}
+
+.c-transfer {
+    font-weight: 700;
+
+    color: var(--black);
+    background-color: rgba(255, 211, 0, 1);
+}
+
+.title__news {
+    display: block;
+    overflow: hidden;
+
+    max-height: 6.25rem;
+    margin-bottom: 1rem;
+
+    transition: var(--global-trans);
+
+    color: var(--black);
+}
+
+.title__news span {
+    font-size: 1.125rem;
+    font-weight: 700;
+
+    display: block;
+    display: -webkit-box;
+
+    transition: var(--global-trans);
+
+    overflow-wrap: break-word;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.title__news:hover span {
+    color: rgba(0, 0, 0, .7);
+}
+
+.info__news {
+    display: flex;
+
+    align-items: center;
+}
+
+.date__news,
+.author__news {
+    font-size: .75rem;
+    font-weight: 700;
+
+    margin-right: .5rem;
+    margin-bottom: 0;
+
+    color: rgba(0, 0, 0, .7);
+}
+
+.info__news i {
+    font-size: .375rem;
+
+    margin-right: .5rem;
+
+    color: rgba(0, 0, 0, .7);
+}
+
+.btn__news {
+    padding: 2.5rem 0 2rem;
+}
+
+.btn__nother {
+    font-weight: 500;
+
+    padding: 1.125rem 2.25rem;
+
+    transition: var(--global-trans);
+
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.btn__nother:hover {
+    color: var(--white);
+    background-color: rgba(0, 0, 0, .9);
+}
+
+/* ads news */
+.ads__news__xl {
+    display: flex;
+
+    width: 100%;
+    height: 25rem;
+    margin-bottom: 1.875rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.ads__news__l {
+    display: flex;
+
+    width: 100%;
+    height: 12.5rem;
+    margin-bottom: 1.875rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* berita terbaru */
+.new__news {
+    margin-bottom: 1.875rem;
+}
+
+.headnew__news {
+    display: flex;
+
+    width: 100%;
+    padding: .75rem;
+
+    background-color: var(--black);
+
+    align-items: center;
+    justify-content: center;
+}
+
+.contentnew__news {
+    padding: .75rem .75rem 1.25rem;
+}
+
+.nn__card {
+    display: flex;
+
+    height: 6.5rem;
+    margin-bottom: .75rem;
+
+    transition: var(--global-trans);
+}
+
+.nn__card:hover {
+    background-color: rgba(210, 210, 210, 1);
+}
+
+.nn__left {
+    flex: 50%;
+}
+
+.nn__left img {
+    width: 100%;
+
+    transition: var(--global-trans);
+}
+
+.nn__right {
+    overflow: hidden;
+
+    margin-left: .625rem;
+    padding: .25rem 0;
+
+    flex: 50%;
+}
+
+.nn__date {
+    font-size: .75rem;
+
+    margin-bottom: .375rem;
+}
+
+.nn__title {
+    font-weight: 600;
+
+    display: block;
+    display: -webkit-box;
+
+    margin-bottom: 0;
+
+    transition: var(--global-trans);
+
+    color: var(--black);
+
+    overflow-wrap: break-word;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.nn__title:hover {
+    color: rgba(0, 0, 0, 1);
+}
 
 /*******************************************/
 /*               RESPONSIVES               */
 /*******************************************/
-
+@media (max-width: 1200px) {
+  .vl {
+    margin: 0;
+  }
+}
 /*=============== tablet view ===============*/
 @media (max-width: 991px) {
   /****************************************/
@@ -1203,131 +1391,135 @@ footer p {
 
     --global-trans: all 0.3s ease-in-out;
   }
+
   /*********************************************/
   /*               GENERAL STYLE               */
   /*********************************************/
   h1 {
-    font-size: 3.75rem;
+      font-size: 3.75rem;
   }
 
   h2 {
-    font-size: 2.5rem;
+      font-size: 2.5rem;
   }
 
   h3 {
-    font-size: 1.5rem;
+      font-size: 1.5rem;
   }
 
   /* Navbar */
   .vl {
-    display: none;
+      display: none;
   }
 
   .form__search {
-    display: none !important;
+      display: none !important;
   }
 
   .navbar__collapse {
-    margin-top: 1.5rem;
+      margin-top: 1.5rem;
   }
 
   /* footer */
   .left__footer {
-    margin-bottom: 1.875rem;
+      margin-bottom: 1.875rem;
   }
 
   .right__footer {
-    justify-content: start;
+      justify-content: start;
   }
 
   .quick__links ul,
   .nama__liga1 ul,
   .nama__liga2 ul {
-    padding-left: 0;
+      padding-left: 0;
   }
 
   /* gabung section */
   .gabung__content,
   .gabung__content2 {
-    padding: 3rem;
+      padding: 3rem;
   }
 
   /**************************************/
   /*               INDEX                */
   /**************************************/
   .left__jumbotron {
-    min-height: 45rem;
-    padding-top: 11.25rem;
+      min-height: 45rem;
+      padding-top: 11.25rem;
   }
 
   .right__jumbotron {
-    height: 25rem;
+      height: 25rem;
   }
 
   /* stream choose */
   .stream__choose .row p {
-    max-width: 100%;
+      max-width: 100%;
   }
 
   #list__video {
-    padding-left: 0;
+      padding-left: 0;
   }
 
   .item__vid {
-    width: 100%;
-    padding: 4.5rem 0 0;
+      width: 100%;
+      padding: 4.5rem 0 0;
   }
 
   .video__play {
-    margin: 0 1rem;
+      margin: 0 1rem;
   }
 
   .video__play .bg__img,
   .box__video {
-    width: 100%;
-    max-width: 100%;
+      width: 100%;
+      max-width: 100%;
   }
 
   /* testi */
   .left__testi {
-    height: 25rem;
-    margin-bottom: 2.25rem;
+      height: 25rem;
+      margin-bottom: 2.25rem;
 
-    justify-content: center;
+      justify-content: center;
   }
 
   .left__testi .bg__img {
-    width: 67%;
-    height: 100%;
+      width: 67%;
+      height: 100%;
   }
 
   /**************************************/
   /*               ABOUT                */
   /**************************************/
   .about__jumbotron .left__jumbotron {
-    min-height: 41rem;
+      min-height: 41rem;
   }
 
   .apaitu__desc__content {
-    height: 100%;
-    padding: 4rem 3rem;
+      height: 100%;
+      padding: 4rem 3rem;
   }
 
   /*********************************************/
   /*               LIST STREAM                 */
   /*********************************************/
   .list__liga {
-    margin: 0 0 3.375rem;
-    padding: 1.875rem;
+      margin: 0 0 3.375rem;
+      padding: 1.875rem;
   }
+
   .match__kiri .match__nama__club {
-    padding-right: 1rem;
+      padding-right: 1rem;
   }
+
   .match__kanan .match__nama__club {
-    padding-left: 1rem;
+      padding-left: 1rem;
   }
+
   .match__club img {
-    height: 2.25rem;
+      height: 2.25rem;
   }
 
   /**************************************/
@@ -1335,54 +1527,99 @@ footer p {
   /**************************************/
   /* header skor */
   .live__skor p {
-    font-size: 1.1rem;
+      font-size: 1.1rem;
   }
+
   .live__skor i {
-    font-size: .65rem;
-    transform: translateY(1px);
+      font-size: .65rem;
+
+      transform: translateY(1px);
   }
+
   .ls__stream {
-    height: 17rem;
+      height: 17rem;
   }
+
   .title__club {
-    font-size: 1.5rem;
+      font-size: 1.5rem;
   }
+
   .logo__club {
-    height: 4rem;
+      height: 4rem;
   }
+
   /* play video */
   .blok-play {
-    padding: var(--m-min) 1.125rem;
+      padding: var(--m-min) 1.125rem;
   }
+
   .play__video {
-    height: 26.5rem;
-    margin-bottom: 1.25rem;
+      height: 26.5rem;
+      margin-bottom: 1.25rem;
   }
+
   .add__slot {
-    width: 100%;
-    height: 10rem;
-    padding: 1rem;
+      width: 100%;
+      height: 10rem;
+      padding: 1rem;
   }
+
   /* info terbaru */
   .info__terbaru__content {
-    padding: 3rem;
+      padding: 3rem;
   }
+
   .info__terbaru__content h2 {
-    text-align: center;
-    margin-bottom: 2.25rem;
+      margin-bottom: 2.25rem;
+
+      text-align: center;
   }
+
   .info__link i {
-    font-size: 3.75rem;
+      font-size: 3.75rem;
   }
 
   /************************************/
   /*               NEWS               */
   /************************************/
   .news__category {
-    padding: 1rem 3rem;
+      padding: 1rem 3rem;
   }
+
   .link__category {
-    font-size: .875rem;
+      font-size: .875rem;
+  }
+
+  .nc__container .row>* {
+      padding: 0;
+  }
+
+  .nc__container .row .col-lg-8.col-12.ps-0 {
+      margin-bottom: 1.875rem;
+  }
+
+  .badge__category,
+  .date__news,
+  .author__news {
+      font-size: .625rem;
+  }
+
+  .title__news span {
+      font-size: 1rem;
+  }
+
+  /* berita terbaru */
+  .nn__card {
+      height: auto;
+      max-height: 8.625rem;
+  }
+
+  .nn__left {
+      flex: 40%;
+  }
+
+  .nn__right {
+    flex: 60%;
   }
 }
 
@@ -1408,230 +1645,240 @@ footer p {
 
     --global-trans: all 0.3s ease-in-out;
   }
+  
   /*********************************************/
   /*               GENERAL STYLE               */
   /*********************************************/
   h1 {
-    font-size: 2.5rem;
+      font-size: 2.5rem;
   }
 
   h2 {
-    font-size: 2.25rem;
+      font-size: 2.25rem;
   }
 
   h4 {
-    font-size: 1.5rem;
+      font-size: 1.5rem;
   }
 
   h6 {
-    font-size: 1rem;
+      font-size: 1rem;
   }
 
   /* footer */
   .fblok-x {
-    padding: 0 0.75rem;
+      padding: 0 .75rem;
   }
 
   .footer__title__logo a {
-    justify-content: center;
-    max-width: 100%;
+      max-width: 100%;
+
+      justify-content: center;
   }
 
   .footer__title__logo img {
-    text-align: center;
+      text-align: center;
   }
 
   .footer__deskripsi {
-    max-width: 100%;
-    margin: auto;
+      max-width: 100%;
+      margin: auto;
 
-    text-align: center;
+      text-align: center;
   }
 
   .footer__content {
-    padding: 4.5rem 0;
+      padding: 4.5rem 0;
   }
 
   .right__footer {
-    margin: auto;
+      margin: auto;
 
-    justify-content: center;
+      justify-content: center;
   }
 
   .nama__liga1,
   .nama__liga2 {
-    padding-right: 0;
-    padding-left: 0;
+      padding-right: 0;
+      padding-left: 0;
   }
 
   .footer__sosmed {
-    margin-bottom: 1.875rem;
+      margin-bottom: 1.875rem;
   }
 
   .footer__sosmed ul {
-    justify-content: center;
+      justify-content: center;
   }
 
   .bottom__footer p {
-    font-size: 14px;
+      font-size: 14px;
   }
 
   .fl__head {
-    display: block;
+      display: block;
   }
 
   /* gabung section */
   .gabung__content,
   .gabung__content2 {
-    padding: 2.25rem;
+      padding: 2.25rem;
   }
 
   .gabung__content h2,
   .gabung__content2 h2 {
-    margin-bottom: 1.875rem;
+      margin-bottom: 1.875rem;
   }
 
   /**************************************/
   /*               INDEX                */
   /**************************************/
   .about__jumbotron .left__jumbotron {
-    min-height: 40rem;
+      min-height: 40rem;
   }
 
   .left__jumbotron {
-    min-height: 45rem;
-    padding-top: 8.5rem;
+      min-height: 45rem;
+      padding-top: 8.5rem;
   }
 
   .left__jumbotron.blok-x {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
   }
 
   .left__jumbotron h1 {
-    margin-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
   }
 
   .right__jumbotron {
-    height: 25rem;
+      height: 25rem;
   }
 
   .btn__stream span,
   .btn__stream i {
-    font-size: 1rem;
+      font-size: 1rem;
   }
 
   .stream__now {
-    margin-bottom: 4rem;
+      margin-bottom: 4rem;
   }
 
   .liga__list {
-    justify-content: center;
+      justify-content: center;
   }
 
   .link__logo {
-    margin: 0 1.125rem 2.25rem;
+      margin: 0 1.125rem 2.25rem;
   }
 
   .link__logo:last-child {
-    margin: 0 1.125rem 2.25rem;
+      margin: 0 1.125rem 2.25rem;
   }
 
   /* stream choose */
   .player__tumbnail {
-    display: none !important;
+      display: none !important;
   }
 
   .item__vid {
-    padding: 2.25rem 0 0;
+      padding: 2.25rem 0 0;
   }
 
   .video__play {
-    margin: 0;
+      margin: 0;
   }
 
   .ll__video {
-    height: 2.75rem;
-    padding: .375rem;
+      height: 2.75rem;
+      padding: .375rem;
   }
 
   /* test */
   .right__testi h2 {
-    margin-bottom: 2.25rem;
+      margin-bottom: 2.25rem;
   }
 
   .left__testi {
-    width: 100%;
-    height: 22rem;
-    margin: 0 auto 1.875rem;
+      width: 100%;
+      height: 22rem;
+      margin: 0 auto 1.875rem;
 
-    align-items: end;
+      align-items: end;
   }
 
   .testi__point li {
-    margin-bottom: 1.875rem;
+      margin-bottom: 1.875rem;
   }
 
   .left__testi .bg__img {
-    width: 90%;
-    height: 100%;
+      width: 90%;
+      height: 100%;
   }
 
   /**************************************/
   /*               ABOUT                */
   /**************************************/
   .apaitu__desc {
-    height: auto;
+      height: auto;
   }
 
   .apaitu__image__content {
-    height: 25rem;
+      height: 25rem;
   }
 
   .apaitu__desc__content {
-    height: auto;
-    padding: 2rem;
+      height: auto;
+      padding: 2rem;
   }
 
   /* tonton section */
   .tonton__btn {
-    font-size: 3.75rem;
+      font-size: 3.75rem;
   }
-  
+
   /*********************************************/
   /*               LIST STREAM                 */
   /*********************************************/
   .list__title {
-    padding-top: calc(var(--m-max) + 2rem);
-    margin-bottom: 2.5rem;
+      margin-bottom: 2.5rem;
+      padding-top: calc(var(--m-max) + 2rem);
   }
+
   .list__liga {
-    margin: 0 0 2.25rem;
-    padding: 1.5rem .75rem .25rem;
+      margin: 0 0 2.25rem;
+      padding: 1.5rem .75rem .25rem;
   }
+
   .list__liga__image img {
-    height: 3rem;
+      height: 3rem;
   }
+
   .match {
-    padding: 1rem .75rem;
+      padding: 1rem .75rem;
   }
+
   .match__club img {
-    height: 1.75rem;
+      height: 1.75rem;
   }
+
   .match__nama__club,
   .stream__match__livescore,
   .stream__match__score__v,
   .stream__match__score__waktu {
-    font-size: .875rem;
+      font-size: .875rem;
   }
+
   .match__kanan .match__nama__club {
-    padding-left: .75rem;
+      padding-left: .75rem;
   }
+
   .match__kiri .match__nama__club {
-    padding-right: .75rem;
+      padding-right: .75rem;
   }
+
   .list__liga__image {
-    align-self: center;
+      align-self: center;
   }
 
   /**************************************/
@@ -1639,75 +1886,122 @@ footer p {
   /**************************************/
   /* header skor */
   .live__skor {
-    margin-bottom: .5rem;
+      margin-bottom: .5rem;
   }
+
   .live__skor p {
-    font-size: .875rem;
-    margin-right: .5rem;
+      font-size: .875rem;
+
+      margin-right: .5rem;
   }
+
   .ls__stream {
-    height: 12rem;
+      height: 12rem;
   }
+
   .ls__stream .row {
-    flex-wrap: wrap;
+      flex-wrap: wrap;
   }
+
   .title__club {
-    font-size: 1.125rem;
+      font-size: 1.125rem;
   }
+
   .logo__club {
-    height: 2.25rem;
-    margin-bottom: .375rem;
+      height: 2.25rem;
+      margin-bottom: .375rem;
   }
+
   .right__head__club {
-    padding-left: 1.5rem;
+      padding-left: 1.5rem;
   }
+
   .left__head__club {
-    padding-right: 1.5rem;
+      padding-right: 1.5rem;
   }
+
   .skor__head h3 {
-    font-size: 1.25rem;
+      font-size: 1.25rem;
   }
+
   .skor__head p {
-    font-size: .875rem;
+      font-size: .875rem;
   }
+
   /* play video */
   .blok-play {
-    padding: var(--m-min) 0;
+      padding: var(--m-min) 0;
   }
+
   .play__video {
-    margin-bottom: .875rem;
-    height: 16rem;
+      height: 16rem;
+      margin-bottom: .875rem;
   }
+
   .play__video i {
-    font-size: 3rem;
+      font-size: 3rem;
   }
+
   /* info terbaru */
   .info__terbaru__content {
-    padding: 2.25rem;
+      padding: 2.25rem;
   }
+
   .info__terbaru__content h2 {
-    margin-bottom: 1.875rem;
+      margin-bottom: 1.875rem;
   }
+
   .info__link {
-    padding: 0 .75rem;
-    margin-bottom: .75rem;
+      margin-bottom: .75rem;
+      padding: 0 .75rem;
   }
+
   .info__link i {
-    font-size: 2.25rem;
-    margin-bottom: .375rem;
+      font-size: 2.25rem;
+
+      margin-bottom: .375rem;
   }
+
   .info__link p {
-    font-size: .75rem;
+      font-size: .75rem;
   }
 
   /************************************/
   /*               NEWS               */
   /************************************/
   .blok__head__news {
-    padding-top: 8.5rem;
-    padding-bottom: 2.5rem;
+      padding-top: 8.5rem;
+      padding-bottom: 2.5rem;
   }
+
   .news__category {
-    padding: 1rem 2.5rem;
+      padding: 1rem 2.5rem;
+  }
+
+  .btn__nother {
+      font-size: .875rem;
+
+      padding: .875rem 1.5rem;
+  }
+
+  .nn__card {
+      max-height: 6.5rem;
+  }
+
+  .nn__left,
+  .nn__right {
+      flex: 50%;
+  }
+
+  .nn__title {
+      font-size: .875rem;
+
+      overflow: hidden;
+
+      height: 4rem;
+  }
+
+  .nn__date {
+    font-size: .625rem;
   }
 }

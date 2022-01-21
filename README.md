@@ -19,7 +19,9 @@ Folder Structure:
  ┃ ┃ ┗ 📜styles.css
  ┃ ┣ 📂img
  ┃ ┃ ┗ 📂club
+ ┃ ┃ ┗ 📂icon
  ┃ ┃ ┗ 📂liga
+ ┃ ┃ ┗ 📂news
  ┃ ┃ ┗ 📜...
  ┃ ┣ 📂js
  ┃ ┃ ┣ 📜owl.carousel.min.js
@@ -30,6 +32,8 @@ Folder Structure:
  ┣ 📜about.html
  ┣ 📜index.html
  ┣ 📜list_stream.html
+ ┣ 📜news_read.html
+ ┣ 📜news.html
  ┣ 📜README.md
  ┗ 📜stream.html
 ```
@@ -38,6 +42,7 @@ Folder Structure:
 
 - Responsives all devices
 - Modern user interface design
+- Unlimited Streaming Soccer
 
 ## 💻 UI Design
 
@@ -51,6 +56,11 @@ Folder Structure:
 
 ## 📱 Contact and Social Media
 
-## 🏢 Used By
+<p align="left">
+    <a href="https://t.me/SoccerPlayTV" target="_blank"> <img src="https://edent.github.io/SuperTinyIcons/images/svg/flickr.svg" width="125" title="Flickr"/> </a>
+</p>
 
-This project is used by the following companies:
+- [](https://www.instagram.com/soccerplaytv/)
+- [](https://www.youtube.com/channel/UCdCDsblHDRLJYe5GzcXHg2A)
+
+## 🏢 Used By
