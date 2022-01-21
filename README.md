@@ -57,10 +57,9 @@ Folder Structure:
 ## 📱 Contact and Social Media
 
 <p align="left">
-    <a href="https://t.me/SoccerPlayTV" target="_blank"> <img src="https://edent.github.io/SuperTinyIcons/images/svg/flickr.svg" width="125" title="Flickr"/> </a>
+    <a href="https://www.instagram.com/soccerplaytv/" target="_blank"> <img src="https://edent.github.io/SuperTinyIcons/images/svg/instagram.svg" width="36" title="Instagram"/> </a>
+    <a href="https://t.me/SoccerPlayTV" target="_blank"> <img src="https://edent.github.io/SuperTinyIcons/images/svg/telegram.svg" width="36" title="Telegram"/> </a>
+    <a href="https://www.youtube.com/channel/UCdCDsblHDRLJYe5GzcXHg2A" target="_blank"> <img src="https://edent.github.io/SuperTinyIcons/images/svg/youtube.svg" width="36" title="Youtube"/> </a>
 </p>
-
-- [](https://www.instagram.com/soccerplaytv/)
-- [](https://www.youtube.com/channel/UCdCDsblHDRLJYe5GzcXHg2A)
 
 ## 🏢 Used By
